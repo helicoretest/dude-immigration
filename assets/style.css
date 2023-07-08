@@ -21,6 +21,14 @@
   color: #1C1A13;
 }
 
+.para-header {
+  font-size: 36px;
+  font-family: "Bitter", serif;
+  font-weight: 500;
+  line-height: normal;
+  color: #1E1E1E;
+}
+
 .p-header {
   font-size: 32px;
   font-style: normal;
@@ -28,6 +36,15 @@
   line-height: 42px;
   font-family: "Bitter", serif;
   color: #FFF;
+}
+
+.para-txt {
+  color: #000;
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .p-txt {
@@ -136,6 +153,97 @@
   font-family: "Bitter", serif;
   line-height: 21.6px;
   text-transform: uppercase;
+}
+
+.footer {
+  background-color: #F8F8F8;
+}
+.footer .main-content {
+  padding: 60px 0px 40px 0px;
+}
+.footer .main-content .f-link {
+  font-family: "Bitter", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  color: #616160;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.footer .main-content .content .logo-img {
+  width: 129px;
+  height: 64px;
+  margin-bottom: 24px;
+}
+.footer .main-content .content .logo-img img {
+  width: 100%;
+  height: 100%;
+}
+.footer .main-content .content .inner-content .f-header {
+  color: #323130;
+  font-family: "Bitter", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.footer .main-content .sec-content .p-txt {
+  font-size: 18px;
+  color: #323130;
+}
+.footer .main-content .sec-content .form-group {
+  width: 100%;
+}
+.footer .main-content .sec-content .form-group .form-control {
+  padding-left: 2.375rem;
+  border-radius: 10px;
+  border: 1px solid #323130;
+}
+.footer .main-content .sec-content .form-group .form-control-icon {
+  position: absolute;
+  font-size: 18px;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+}
+.footer .main-content .sec-content .subscrice {
+  display: flex;
+  align-items: center;
+}
+.footer .main-content .sec-content .subscrice .p-txt {
+  margin-left: 12px;
+  margin-bottom: 0px;
+}
+.footer .main-content .sec-content .socials-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .main-content .sec-content .socials-links .links .s-link {
+  color: #323130;
+  font-size: 22px;
+  cursor: pointer;
+}
+.footer .main-content .sec-content .socials-links .links .s-link:hover {
+  color: #FECE05;
+}
+.footer .main-content .sec-content .socials-links .back-to-top .back-btn {
+  overflow: hidden;
+  border: none;
+  color: #1E1E1E;
+  background: none;
+  font-family: "Bitter", serif;
+}
+.footer .main-content .footer-strip {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 .home-sec .main-content {
@@ -562,4 +670,131 @@
 }
 .blog .main-content .content .img-box .blog-img.blog-img-3 {
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 28.01%, rgba(0, 0, 0, 0) 55.36%), url("./images/blog3.jpg"), lightgray 50%;
+}
+
+.culture .main-content {
+  padding: 80px 0px;
+}
+.culture .main-content .secondary-header {
+  width: 95%;
+}
+
+.flag-sec .img-box {
+  width: 100%;
+  height: 832px;
+}
+.flag-sec .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-story {
+  background-color: #FFFFFF;
+}
+.our-story .main-content {
+  padding: 80px 0px 160px 0px;
+}
+.our-story .main-content .content .img-box {
+  width: 532px;
+  height: 567px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.our-story .main-content .content .img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.our-story .main-content .content .box {
+  width: 397px;
+  height: 441px;
+  border-radius: 20px;
+  border: 1.6px solid #FFF;
+  position: absolute;
+  bottom: 20px;
+  right: 98px;
+  z-index: 1111;
+}
+.our-story .main-content .content .bg-img-box {
+  width: 451px;
+  height: 404px;
+  position: absolute;
+  bottom: -143px;
+  right: -141px;
+}
+.our-story .main-content .content .bg-img-box img {
+  width: 100%;
+  height: 100%;
+}
+.our-story .main-content .sec-content .para-header {
+  margin-bottom: 24px;
+}
+
+.our-goal {
+  background-color: #FFFFFF;
+}
+.our-goal .main-content {
+  padding: 0px 0px 100px 0px;
+}
+.our-goal .main-content .content {
+  display: flex;
+}
+.our-goal .main-content .content .para-header {
+  width: 53%;
+}
+.our-goal .main-content .content .para-txt {
+  margin-top: 48px;
+}
+
+.our-process {
+  background-color: #F8F8F8;
+}
+.our-process .main-content {
+  padding: 60px 70px;
+}
+.our-process .main-content .primary-header {
+  text-align: center;
+}
+.our-process .main-content .content .img-box {
+  width: 230px;
+  height: 290px;
+  border-radius: 10px;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center !important;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 28.86%, rgba(0, 0, 0, 0) 59.22%), url(./images/process1.png), lightgray -65.852px 0px/189.107% 100% no-repeat;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 20px;
+}
+.our-process .main-content .content .img-box.box-2 {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 28.86%, rgba(0, 0, 0, 0) 59.22%), url(./images/process2.png), lightgray -65.852px 0px/189.107% 100% no-repeat;
+}
+.our-process .main-content .content .img-box.box-3 {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 28.86%, rgba(0, 0, 0, 0) 59.22%), url(./images/process3.png), lightgray -65.852px 0px/189.107% 100% no-repeat;
+}
+.our-process .main-content .content .img-box.box-4 {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 28.86%, rgba(0, 0, 0, 0) 59.22%), url(./images/process4.png), lightgray -65.852px 0px/189.107% 100% no-repeat;
+}
+.our-process .main-content .content .img-box .p-txt {
+  color: #FEFEFE;
+  font-size: 18px;
+  text-align: center;
+}
+.our-process .main-content .content .img-box .p-txt .min {
+  color: #FFCC09;
+}
+.our-process .main-content .content .arrow-box {
+  width: 148px;
+  height: 123px;
+  transform: translateX(-26px);
+}
+.our-process .main-content .content .arrow-box img {
+  width: 100%;
+  height: 100%;
+}
+.our-process .main-content .content.sec .arrow-box {
+  margin-top: 88px;
 }/*# sourceMappingURL=style.css.map */
