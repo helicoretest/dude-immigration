@@ -271,6 +271,7 @@ $breakpoints: (
 
             button {
                 -webkit-font-smoothing: antialiased;
+
                 &::before {
                     float: right !important;
                     font-family: FontAwesome;
@@ -1390,96 +1391,133 @@ $breakpoints: (
 
     .main-content {
         padding: 0px 0px 100px 0px;
+        position: relative;
 
         .primary-header {
             color: #1E1E1E;
             margin-bottom: 60px;
-            text-align: center;
         }
 
-        .card-goal {
-            border-radius: 10px;
-            background: #FCEBA4;
-            width: 100%;
-            padding: 48px;
-            min-height: 525px;
+        .owl-carousel {
+            .owl-nav {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: -113px;
 
-            .p-header {
-                color: $primary-txt-color;
-                line-height: 24px;
-                margin-bottom: 28px;
-            }
+                @include mobile {
+                    position: relative;
+                    top: 0;
+                    margin-top: 20px;
+                }
 
-            .content {
-                .img-box {
-                    width: 323px;
-                    height: 331px;
+                .owl-next {
+                    margin-left: 40px;
 
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 10px;
+                    &:hover {
+                        background-color: transparent;
+                    }
+
+                    &:focus-visible {
+                        outline: 0px;
+                    }
+                }
+
+                .owl-prev {
+                    &:hover {
+                        background-color: transparent;
+                    }
+
+                    &:focus-visible {
+                        outline: 0px;
                     }
                 }
             }
 
-            .sec-content {
-                .p-txt {
+            .card-goal {
+                border-radius: 10px;
+                background: #FCEBA4;
+                width: 100%;
+                padding: 48px;
+                min-height: 525px;
+
+                .p-header {
                     color: $primary-txt-color;
-                    font-family: $assiatant;
-                    margin-bottom: 20px;
+                    line-height: 24px;
+                    margin-bottom: 28px;
                 }
 
-                .value {
-                    .primary-header {
-                        font-size: 24px;
-                        line-height: 24px;
-                        color: $primary-txt-color;
-                        text-align: start;
-                        font-family: $bitter;
-                        margin-bottom: 12px;
-                    }
+                .content {
+                    .img-box {
+                        width: 323px;
+                        height: 331px;
 
-                    ul {
-                        margin-left: 20px;
-                        // list-style: none;
-
-                        li {
-                            &::before {
-                                // font-size: 48px;
-                                // content: "• ";
-                                // color: #505050;;
-                                // margin-left: -.8em;
-                            }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 10px;
                         }
                     }
+                }
 
-                    .primary-btn {
-                        color: #FEFEFE;
-                        background: #0E0E0E;
+                .sec-content {
+                    .p-txt {
+                        color: $primary-txt-color;
+                        font-family: $assiatant;
+                        margin-bottom: 20px;
+                    }
 
-                        &:hover {
-                            &::before {
-                                background-image: radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, transparent 20%, #0E0E0E 20%, transparent 30%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, transparent 10%, #0E0E0E 15%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%);
+                    .value {
+                        .primary-header {
+                            font-size: 24px;
+                            line-height: 24px;
+                            color: $primary-txt-color;
+                            text-align: start;
+                            font-family: $bitter;
+                            margin-bottom: 12px;
+                        }
+
+                        ul {
+                            margin-left: 20px;
+                            // list-style: none;
+
+                            li {
+                                &::before {
+                                    // font-size: 48px;
+                                    // content: "• ";
+                                    // color: #505050;;
+                                    // margin-left: -.8em;
+                                }
                             }
+                        }
 
-                            &::after {
-                                background-image: radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, transparent 10%, #0E0E0E 15%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%),
-                                    radial-gradient(circle, #0E0E0E 20%, transparent 20%);
+                        .primary-btn {
+                            color: #FEFEFE;
+                            background: #0E0E0E;
 
+                            &:hover {
+                                &::before {
+                                    background-image: radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, transparent 20%, #0E0E0E 20%, transparent 30%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, transparent 10%, #0E0E0E 15%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%);
+                                }
+
+                                &::after {
+                                    background-image: radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, transparent 10%, #0E0E0E 15%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%),
+                                        radial-gradient(circle, #0E0E0E 20%, transparent 20%);
+
+                                }
                             }
                         }
                     }
@@ -1505,6 +1543,7 @@ $breakpoints: (
 
         .content {
             margin-bottom: 48px;
+
             .box {
                 border-radius: 8px;
                 border: 1px solid #BCBBBA;
@@ -1525,7 +1564,7 @@ $breakpoints: (
             margin-bottom: 48px;
 
 
-            &.sec{
+            &.sec {
                 justify-content: end;
             }
 
@@ -1538,7 +1577,7 @@ $breakpoints: (
                     width: 100%;
                     height: 100%;
 
-                    &:hover{
+                    &:hover {
                         color: #FECE05;
                         fill: none;
                     }
@@ -1651,7 +1690,7 @@ $breakpoints: (
 //talk sec start
 .lets-talk {
     .main-content {
-        padding: 0px 0px 80px 0px;
+        padding: 0px 0px 0px 0px;
 
         .img-box {
             width: 100%;
