@@ -270,6 +270,7 @@ $breakpoints: (
             padding: 0.75rem 0rem;
 
             button {
+                -webkit-font-smoothing: antialiased;
                 &::before {
                     float: right !important;
                     font-family: FontAwesome;
@@ -916,7 +917,6 @@ $breakpoints: (
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
-                background-attachment: fixed;
             }
 
             .content {
@@ -1402,6 +1402,7 @@ $breakpoints: (
             background: #FCEBA4;
             width: 100%;
             padding: 48px;
+            min-height: 525px;
 
             .p-header {
                 color: $primary-txt-color;

@@ -179,6 +179,9 @@
   border-bottom: none !important;
   padding: 0.75rem 0rem;
 }
+.accordion .card .card-header button {
+  -webkit-font-smoothing: antialiased;
+}
 .accordion .card .card-header button::before {
   float: right !important;
   font-family: FontAwesome;
@@ -969,6 +972,7 @@
   background: #FCEBA4;
   width: 100%;
   padding: 48px;
+  min-height: 525px;
 }
 .envisioned-goal .main-content .card-goal .p-header {
   color: #1C1A13;

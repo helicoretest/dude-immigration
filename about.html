@@ -78,7 +78,7 @@
           </a>
 
           <div>
-            <button class="primary-btn">Book An Appointment</button>
+            <button class="primary-btn">Book A Consultation</button>
           </div>
         </nav>
       </div>
@@ -223,9 +223,7 @@
           <div class="row">
             <div class="col-xl-3 col-lg-3 cl-md-3 col-12 col-sm-12 content">
               <div class="img-box">
-                <h4 class="p-txt">
-                  Free<span class="min"> 30 min </span>Consultaion
-                </h4>
+                <h4 class="p-txt">Consultaion</h4>
               </div>
             </div>
             <div class="col-xl-3 col-lg-3 cl-md-3 col-12 col-sm-12 content sec">
@@ -279,7 +277,7 @@
                 Embark on an adventure of personal and professional growth with
                 our Immigration Services.
               </h1>
-              <button class="primary-btn">Book An Appointment</button>
+              <button class="primary-btn">Book A Consultation</button>
             </div>
           </div>
         </div>
@@ -529,6 +527,33 @@
         accelerationDelta: 50,
         accelerationMax: 3,
         touchpadSupport: true,
+      });
+    </script>
+
+    <script>
+      $(".success-caro").owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        dots: false,
+        stagePadding: 100,
+        center: true,
+        margin: 10,
+        autoplaySpeed: 3000,
+        navText: [
+          '<img src="./assets/images/arrow-left.png" class="arrow-btn" />',
+          '<img src="./assets/images/arrow-right.png" class="arrow-btn" />',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 2,
+          },
+        },
       });
     </script>
   </body>
