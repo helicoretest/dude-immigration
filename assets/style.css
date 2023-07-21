@@ -139,6 +139,73 @@
   }
 }
 
+.send-btn {
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 16px;
+  color: #1C1A13;
+  text-align: center;
+  background-color: #FFCC09;
+  box-shadow: #cacaca 2px 2px 10px 1px;
+  border-radius: 4px;
+  height: 40px;
+  width: 100px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.send-btn:active {
+  transition: all 0.001s ease;
+  background-color: #FFCC09;
+  box-shadow: #97989a 0 0 0 0;
+  transform: translateX(1px) translateY(1px);
+}
+.send-btn:hover .msg {
+  animation: msgRun 2s forwards;
+}
+.send-btn .msg {
+  height: 0;
+  width: 0;
+  border-radius: 2px;
+  position: absolute;
+  left: 15%;
+  top: 25%;
+}
+@keyframes msgRun {
+  0% {
+    border-top: #d6d6d9 0 solid;
+    border-bottom: #f2f2f5 0 solid;
+    border-left: #f2f2f5 0 solid;
+    border-right: #f2f2f5 0 solid;
+  }
+  20% {
+    border-top: #d6d6d9 14px solid;
+    border-bottom: #f2f2f5 14px solid;
+    border-left: #f2f2f5 20px solid;
+    border-right: #f2f2f5 20px solid;
+  }
+  25% {
+    border-top: #d6d6d9 12px solid;
+    border-bottom: #f2f2f5 12px solid;
+    border-left: #f2f2f5 18px solid;
+    border-right: #f2f2f5 18px solid;
+  }
+  80% {
+    border-top: transparent 12px solid;
+    border-bottom: transparent 12px solid;
+    border-left: transparent 18px solid;
+    border-right: transparent 18px solid;
+  }
+  100% {
+    transform: translateX(90px);
+    border-top: transparent 12px solid;
+    border-bottom: transparent 12px solid;
+    border-left: transparent 18px solid;
+    border-right: transparent 18px solid;
+  }
+}
+
 .white-txt {
   color: #FEFEFE;
 }
@@ -395,21 +462,54 @@ a:hover {
   text-transform: capitalize;
 }
 .footer .main-content .footer-images .first-img-box .book-btn {
-  background-color: transparent;
-  color: #FFF;
+  border: none;
+  background: none;
+}
+.footer .main-content .footer-images .first-img-box .book-btn span {
+  font-size: 14px;
+  padding-right: 15px;
   font-size: 16px;
   font-family: "Bitter", serif;
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
-.footer .main-content .footer-images .first-img-box .book-btn i {
-  font-size: 20px;
-  margin-left: 5px;
-  padding-top: 2px;
+.footer .main-content .footer-images .first-img-box .book-btn svg {
+  transform: translateX(-8px);
+  transition: all 0.3 ease;
+  fill: #fff;
 }
-.footer .main-content .footer-images .first-img-box .book-btn:hover {
+.footer .main-content .footer-images .first-img-box .book-btn:hover span {
   color: #FECE05;
+}
+.footer .main-content .footer-images .first-img-box .book-btn:hover svg {
+  transform: translateX(0px);
+  fill: #FECE05;
+}
+.footer .main-content .footer-images .first-img-box .book-btn:hover .hover-underline-animation {
+  color: #FECE05;
+}
+.footer .main-content .footer-images .first-img-box .book-btn:hover .hover-underline-animation::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.footer .main-content .footer-images .first-img-box .book-btn:active {
+  transform: scale(0.9);
+}
+.footer .main-content .footer-images .first-img-box .book-btn .hover-underline-animation {
+  position: relative;
+  color: #FFF;
+  padding-bottom: 4px;
+}
+.footer .main-content .footer-images .first-img-box .book-btn .hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FECE05;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 .footer .main-content .f-link {
   font-family: "Bitter", serif;
@@ -1070,12 +1170,6 @@ a:hover {
 .blog .main-content .content {
   margin-bottom: 40px;
 }
-.blog .main-content .content .img-box {
-  overflow: hidden;
-  border-radius: 10px;
-  width: 347px;
-  height: 420px;
-}
 .blog .main-content .content .img-box .blog-img {
   display: flex;
   align-items: end;
@@ -1086,10 +1180,6 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center !important;
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 28.01%, rgba(0, 0, 0, 0) 55.36%), url("./images/blog1.jpg"), lightgray 50%;
-  transition: all ease-in-out 0.4s;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
   padding: 36px;
 }
 .blog .main-content .content .img-box .blog-img:hover {
@@ -1683,6 +1773,10 @@ a:hover {
   border-radius: 8px;
   border: 1px solid #BCBBBA;
   background-color: transparent;
+}
+.contact .main-content .inquiry .first-content .inquiry-card .contact-btn {
+  display: flex;
+  justify-content: end;
 }
 .contact .main-content .inquiry .sec-content .box {
   border-bottom: 2px dashed #BCBBBA;
