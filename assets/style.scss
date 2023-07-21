@@ -431,6 +431,38 @@ a {
                         font-family: $bitter;
                         line-height: 21.6px;
                         text-transform: uppercase;
+
+                        &:hover{
+                            color: #FECE05;
+
+                        }
+                    }
+                }
+
+                .dropdown-menu {
+                    background-color: transparent;
+                    border: none;
+
+                    &.show {
+                        transform: translate3d(245px, -40px, 0px) !important;
+                    }
+
+                    .dropdown-item {
+                        color: #434241;
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-family: $bitter;
+                        line-height: 21.6px;
+                        text-transform: uppercase;
+
+                        &:hover{
+                            background-color: transparent;
+                            color: #FECE05;
+                        }
+
+                        &:active{
+                            background-color: transparent;
+                        }
                     }
                 }
             }
@@ -460,7 +492,7 @@ a {
 //footer start
 .footer {
     background-color: #121212;
-    
+
 
     .main-content {
         padding: 60px 0px 40px 0px;
@@ -504,13 +536,13 @@ a {
                     display: flex;
                     align-items: center;
 
-                    i{
+                    i {
                         font-size: 20px;
                         margin-left: 5px;
                         padding-top: 2px;
                     }
 
-                    &:hover{
+                    &:hover {
                         color: #FECE05;
                     }
                 }

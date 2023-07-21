@@ -322,6 +322,31 @@ a:hover {
   line-height: 21.6px;
   text-transform: uppercase;
 }
+.fixed-top .navbar-exp .inner-nav .navbar-nav .nav-item .nav-link:hover {
+  color: #FECE05;
+}
+.fixed-top .navbar-exp .inner-nav .navbar-nav .dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
+.fixed-top .navbar-exp .inner-nav .navbar-nav .dropdown-menu.show {
+  transform: translate3d(245px, -40px, 0px) !important;
+}
+.fixed-top .navbar-exp .inner-nav .navbar-nav .dropdown-menu .dropdown-item {
+  color: #434241;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Bitter", serif;
+  line-height: 21.6px;
+  text-transform: uppercase;
+}
+.fixed-top .navbar-exp .inner-nav .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+  color: #FECE05;
+}
+.fixed-top .navbar-exp .inner-nav .navbar-nav .dropdown-menu .dropdown-item:active {
+  background-color: transparent;
+}
 .fixed-top .first-bg {
   position: absolute;
   bottom: 0;
