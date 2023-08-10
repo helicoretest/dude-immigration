@@ -71,6 +71,11 @@ $breakpoints: (
     font-weight: 500;
     line-height: 100.8px;
     color: $primary-txt-color;
+
+    @include mobile {
+        font-size: 48px;
+        line-height: normal;
+    }
 }
 
 .para-header {
@@ -88,6 +93,11 @@ $breakpoints: (
     line-height: 42px;
     font-family: $bitter;
     color: #FFF;
+
+
+    @include mobile {
+        font-size: 20px;
+    }
 }
 
 .para-txt {
@@ -318,28 +328,38 @@ a {
 
 .sec-gap {
     padding-top: 62px;
+
+
 }
 
 
 .faq {
     background-color: $secondary-bg;
-    margin-bottom: 80px;
-
-    &.blogs {
-        margin-bottom: 0px;
-    }
 
     .main-content {
         padding: 80px 0px;
 
+        @include mobile {
+            padding: 60px 0px;
+        }
+
         .content {
             .primary-header {
                 line-height: normal;
+
+                @include mobile {
+                    text-align: center;
+                }
             }
 
             .img-box {
                 width: 396px;
                 height: 408px;
+
+                @include tablet {
+                    width: auto;
+                    height: auto;
+                }
 
                 img {
                     width: 100%;
@@ -393,6 +413,7 @@ a {
                         font-weight: 100;
                         margin-left: 20px;
                         -webkit-text-stroke: 1.1px transparent;
+                        margin-top: 5px;
                     }
                 }
             }
@@ -484,7 +505,7 @@ a {
 
 
     .navbar-exp {
-        padding: 30px 0px 100px 0px;
+        padding: 30px 0px 70px 0px;
         background-color: rgba(255, 255, 255, 0.50) !important;
         backdrop-filter: blur(54.5px);
 
@@ -589,10 +610,16 @@ a {
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url("./images/footer-bg-1.png"), lightgray 0px -106.535px / 100% 328.879% no-repeat;
 
                 &.second-img-box {
-                    width: 439px;
-                    height: 110px;
                     background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url("./images/footer-bg-2.png"), lightgray 0px -106.535px / 100% 328.879% no-repeat;
+                }
 
+                @include tablet {
+                    width: auto;
+                    padding: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 .box-txt {
@@ -602,6 +629,11 @@ a {
                     font-weight: 500;
                     line-height: normal;
                     text-transform: capitalize;
+
+                    @include tablet {
+                        font-size: 18px;
+                        text-align: center;
+                    }
                 }
 
                 .book-btn {
@@ -818,12 +850,29 @@ a {
         padding-bottom: 160px;
         position: relative;
 
+        @include mobile {
+            padding-top: 20px;
+            padding-bottom: 140px;
+        }
+
         .first-sec {
             position: absolute;
             z-index: 1;
             top: 30px;
 
+            @include mobile {
+                position: relative;
+            }
+
             .content {
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 60px;
+                }
+
                 .img-box {
                     width: 88.336px;
                     height: 81.039px;
@@ -838,6 +887,23 @@ a {
                 .primary-header {
                     width: 65%;
                     margin-bottom: 40px;
+
+                    @include tablet {
+                        width: 75%;
+                        font-size: 36px;
+                        line-height: 48px;
+                    }
+
+                    @include mobile {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    .white-txt {
+                        @include tablet {
+                            color: #1C1A13;
+                        }
+                    }
                 }
             }
         }
@@ -858,10 +924,31 @@ a {
                 align-items: end;
                 justify-content: end;
 
+                @include tablet {
+                    width: 447px;
+                    height: 535px;
+                }
+
+                @include mobile {
+                    width: 298px;
+                    height: 340px;
+                }
+
                 .img-box {
                     width: 394px;
                     height: 598px;
                     margin-right: 20px;
+
+
+                    @include tablet {
+                        width: 294px;
+                        height: 498px;
+                    }
+
+                    @include mobile {
+                        width: 207px;
+                        height: 316px;
+                    }
 
                     img {
                         width: 100%;
@@ -874,6 +961,10 @@ a {
                     left: -70px;
                     bottom: -70px;
 
+                    @include mobile {
+                        left: -48px;
+                    }
+
                     .count {
                         font-size: 40px;
                         font-style: normal;
@@ -881,6 +972,10 @@ a {
                         line-height: normal;
                         font-family: "Bitter", serif;
                         color: #1C1A13;
+
+                        @include mobile {
+                            font-size: 30px;
+                        }
                     }
 
                     .p-txt {
@@ -899,6 +994,12 @@ a {
                         align-items: center;
                         justify-content: center;
                         padding: 10px 20px;
+
+
+                        @include mobile {
+                            width: 130px;
+                            height: 120px;
+                        }
 
                     }
 
@@ -1030,7 +1131,7 @@ a {
             text-align: center;
             margin-bottom: 60px;
 
-            @include mobile {
+            @include tablet {
                 margin-bottom: 40px;
             }
         }
@@ -1038,8 +1139,11 @@ a {
         .row-service {
             gap: 80px 0px;
 
-            .content {
+            @include mobile {
+                gap: 20px 0px;
+            }
 
+            .content {
                 &.second {
                     display: flex;
                     justify-content: end;
@@ -1049,7 +1153,7 @@ a {
                     width: 532px;
                     height: 514px;
 
-                    @include mobile {
+                    @include tablet {
                         width: auto;
                         height: auto;
                     }
@@ -1081,13 +1185,25 @@ a {
                 align-items: flex-start;
                 justify-content: center;
 
+                @include mobile {
+                    align-items: center;
+                }
+
                 .para-header {
                     margin-bottom: 20px;
                     color: #323130;
+
+                    @include mobile {
+                        text-align: center;
+                    }
                 }
 
                 .p-txt {
                     margin-bottom: 24px;
+
+                    @include mobile {
+                        text-align: justify;
+                    }
                 }
 
                 .primary-btn {
@@ -1137,7 +1253,7 @@ a {
         padding: 80px 0px 130px 0px;
 
         @include mobile {
-            padding: 80px 20px 130px 20px;
+            padding: 60px 20px 130px 20px;
         }
 
         .content {
@@ -1186,8 +1302,11 @@ a {
         .sec-content {
             padding-left: 50px;
 
-            @include mobile {
+            @include tablet {
                 padding-left: 0px;
+            }
+
+            @include mobile {
                 margin-top: 48px;
             }
 
@@ -1206,9 +1325,12 @@ a {
                         height: 176px;
                         transform: translateY(78px);
 
-                        @include mobile {
+                        @include tablet {
                             width: auto;
                             height: auto;
+                        }
+
+                        @include mobile {
                             transform: translateY(44px);
                         }
 
@@ -1229,7 +1351,7 @@ a {
                         width: 245px;
                         height: 214px;
 
-                        @include mobile {
+                        @include tablet {
                             width: auto;
                             height: auto;
                         }
@@ -1252,11 +1374,14 @@ a {
                 .img-box {
                     width: 141px;
                     height: 123px;
-                    transform: translateX(50px);
+                    transform: translate(30px, 50px);
 
-                    @include mobile {
+                    @include tablet {
                         width: auto;
                         height: auto;
+                    }
+
+                    @include mobile {
                         transform: translate(20px, 60px);
                     }
 
@@ -1273,7 +1398,7 @@ a {
                     height: 245px;
                     transform: translateY(50px);
 
-                    @include mobile {
+                    @include tablet {
                         width: auto;
                         height: auto;
                     }
@@ -1306,6 +1431,11 @@ a {
             .img-box {
                 width: 439px;
                 height: 380px;
+
+                @include tablet {
+                    width: auto;
+                    height: 320px;
+                }
 
                 @include mobile {
                     width: auto;
@@ -1461,6 +1591,13 @@ a {
 .cta {
     background-color: $primary-bg;
 
+    .container {
+        @include mobile {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+    }
+
     .main-content {
         padding: 60px 0px;
 
@@ -1472,18 +1609,48 @@ a {
             border-radius: 20px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url("./images/cta.png"), lightgray 50% / cover no-repeat;
 
+            @include tablet {
+                align-items: center;
+                justify-content: center;
+            }
+
             @include mobile {
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center center;
+                // background-position: center center;
+                height: 220px;
+                border-radius: 0px;
+
+
             }
 
             .content {
                 padding: 40px;
                 width: 50%;
 
+                @include tablet {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                @include mobile {
+                    padding: 20px;
+                }
+
                 .p-header {
                     margin-bottom: 32px;
+
+                    @include tablet {
+                        text-align: center;
+                    }
+
+                    @include mobile {
+                        line-height: 26px;
+                        margin-bottom: 14px;
+                    }
                 }
 
                 .primary-btn {
@@ -1527,6 +1694,14 @@ a {
                 height: 286px;
                 background: linear-gradient(228deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.00) 100%), url("./images/cta-about.png"), lightgray 0px -128.371px / 100% 224.306% no-repeat;
 
+                @include mobile {
+                    border-radius: 0px;
+                    height: 240px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: bottom;
+                }
+
                 .content {
                     width: 100%;
                     padding: 60px 140px;
@@ -1534,9 +1709,17 @@ a {
                     align-items: center;
                     justify-content: center;
 
+                    @include mobile {
+                        padding: 30px 20px;
+                    }
+
                     .p-header {
                         margin-bottom: 40px;
                         text-align: center;
+
+                        @include mobile {
+                            margin-bottom: 20px;
+                        }
                     }
                 }
 
@@ -1567,9 +1750,17 @@ a {
     .main-content {
         padding: 80px 0px;
 
+        @include mobile {
+            padding: 60px 20px;
+        }
+
         .primary-header {
             text-align: center;
             margin-bottom: 60px;
+
+            @include mobile {
+                margin-bottom: 40px;
+            }
         }
 
         .success-caro {
@@ -1580,6 +1771,10 @@ a {
             .owl-nav {
                 display: block;
                 margin-top: 60px;
+
+                @include mobile {
+                    margin-top: 40px;
+                }
 
                 .owl-next {
                     padding: 4px 16px !important;
@@ -1619,6 +1814,10 @@ a {
                     height: 304px;
                     padding: 24px;
 
+                    @include tablet {
+                        width: auto;
+                    }
+
                     .quates {
                         width: 34px;
                         height: 22px;
@@ -1634,6 +1833,10 @@ a {
                         display: -webkit-box;
                         overflow: hidden;
                         height: 170px;
+
+                        @include tablet {
+                            -webkit-line-clamp: 9;
+                        }
                     }
 
                     .name {
@@ -1660,6 +1863,10 @@ a {
 
     .main-content {
         padding: 80px 0px;
+
+        @include mobile {
+            padding: 60px 0px;
+        }
 
         .primary-header {
             text-align: center;
@@ -1699,6 +1906,12 @@ a {
                         transition: 1s ease;
                     }
 
+                    @include tablet {
+                        width: auto;
+                        height: 320px;
+                        padding: 12px;
+                    }
+
                     .p-txt {
                         color: #FEFEFE;
                         line-height: 22px;
@@ -1716,6 +1929,21 @@ a {
                 }
             }
         }
+
+        .blog-row {
+            @include mobile {
+                display: none;
+            }
+        }
+
+
+        .blog-caro {
+            display: none;
+
+            @include mobile {
+                display: block;
+            }
+        }
     }
 }
 
@@ -1729,8 +1957,17 @@ a {
     .main-content {
         padding: 80px 0px;
 
+        @include mobile {
+            padding: 60px 0px;
+        }
+
         .secondary-header {
             width: 95%;
+
+            @include mobile {
+                width: auto;
+                text-align: center;
+            }
         }
     }
 }
@@ -1739,6 +1976,14 @@ a {
     .img-box {
         width: 100%;
         height: 832px;
+
+        @include tablet {
+            height: 728px;
+        }
+
+        @include mobile {
+            height: 480px;
+        }
 
         img {
             width: 100%;
@@ -1754,6 +1999,10 @@ a {
     .main-content {
         padding: 80px 0px 160px 0px;
 
+        @include mobile {
+            padding: 60px 20px;
+        }
+
         .content {
             .img-box {
                 width: 532px;
@@ -1761,6 +2010,15 @@ a {
                 flex-shrink: 0;
                 position: relative;
                 z-index: 1;
+
+                @include tablet {
+                    width: auto;
+                    height: auto;
+                }
+
+                @include mobile {
+                    margin-bottom: 40px;
+                }
 
                 img {
                     width: 100%;
@@ -1779,6 +2037,10 @@ a {
                 bottom: 20px;
                 right: 98px;
                 z-index: 1111;
+
+                @include tablet {
+                    display: none;
+                }
             }
 
             .bg-img-box {
@@ -1787,6 +2049,13 @@ a {
                 position: absolute;
                 bottom: -143px;
                 right: -141px;
+
+                @include mobile {
+                    width: auto;
+                    height: auto;
+                    right: 0px;
+                    bottom: -115px;
+                }
 
                 img {
                     width: 100%;
@@ -1798,6 +2067,16 @@ a {
         .sec-content {
             .para-header {
                 margin-bottom: 24px;
+
+                @include mobile {
+                    text-align: center;
+                }
+            }
+
+            .para-txt {
+                @include mobile {
+                    text-align: center;
+                }
             }
         }
     }
@@ -1810,15 +2089,33 @@ a {
     .main-content {
         padding: 0px 0px 100px 0px;
 
+        @include tablet {
+            padding: 0px 0px 60px 0px;
+        }
+
         .content {
             display: flex;
 
+
+            @include tablet {
+                display: block;
+            }
+
             .para-header {
                 width: 53%;
+
+                @include tablet {
+                    width: 100%;
+                }
             }
 
             .para-txt {
                 margin-top: 48px;
+
+                @include tablet {
+                    margin-top: 18px;
+                    margin-left: 100px;
+                }
             }
         }
     }
@@ -1831,11 +2128,30 @@ a {
     .main-content {
         padding: 60px 70px;
 
+        @include mobile {
+            padding: 60px 0px;
+        }
+
         .primary-header {
             text-align: center;
+
+            @include mobile {
+                margin-bottom: 40px;
+            }
+        }
+
+        .main-row {
+            @include mobile {
+                gap: 30px 0px;
+            }
         }
 
         .content {
+
+            @include mobile {
+                display: flex;
+                align-items: end;
+            }
 
             .img-box {
                 width: 230px;
@@ -1878,6 +2194,26 @@ a {
                 height: 123px;
                 transform: translateX(-26px);
 
+                @include mobile {
+                    display: none;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .arrow-box-mobile {
+                width: 109.484px;
+                height: 70.373px;
+                transform: translate(-9px, 30px);
+                display: none;
+
+                @include mobile {
+                    display: block;
+                }
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -1885,8 +2221,19 @@ a {
             }
 
             &.sec {
+                @include mobile {
+                    display: flex;
+                    justify-content: end;
+                }
+
                 .arrow-box {
                     margin-top: 88px;
+                }
+
+                .arrow-box-mobile {
+                    @include mobile {
+                        transform: translate(32px, 30px);
+                    }
                 }
             }
         }
@@ -1905,19 +2252,41 @@ a {
     .main-content {
         padding: 130px 0px 210px 0px;
 
+        @include tablet {
+            padding: 130px 0px 160px 0px;
+        }
+
+        @include mobile {
+            padding: 90px 0px 60px 0px;
+        }
+
         .content {
             display: flex;
             flex-direction: column;
             justify-content: center;
 
+            @include mobile {
+                order: 2;
+                margin-top: 80px;
+                align-items: center;
+            }
+
             .primary-header {
                 margin-bottom: 24px;
+
+                @include mobile {
+                    margin-bottom: 20px;
+                }
             }
 
             .p-txt {
                 color: #616160;
                 font-family: $assiatant;
                 margin-bottom: 28px;
+
+                @include mobile {
+                    text-align: center;
+                }
             }
         }
 
@@ -1927,6 +2296,14 @@ a {
             justify-content: center;
             position: relative;
 
+            @include tablet {
+                justify-content: start;
+
+                &.tab-div {
+                    justify-content: center;
+                }
+            }
+
             .bg-img-box {
                 position: absolute;
             }
@@ -1935,6 +2312,16 @@ a {
                 width: 440px;
                 height: 405px;
                 z-index: 1;
+
+                @include tablet {
+                    width: 300px;
+                    height: 300px;
+                }
+
+                @include mobile {
+                    width: 254px;
+                    height: 254px;
+                }
 
                 img {
                     width: 100%;
@@ -1951,6 +2338,10 @@ a {
         .main-content {
             padding: 40px 0px 180px 0px;
 
+            @include tablet {
+                padding: 80px 0px 160px 0px;
+            }
+
             .content {
                 z-index: 1;
 
@@ -1965,12 +2356,28 @@ a {
                     position: absolute;
                     top: 30px;
                     right: 51px;
+
+                    @include tablet {
+                        height: 550px;
+                        top: 0px;
+                        right: 6px;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
                 }
 
                 .img-box {
                     width: 423px;
                     height: 534px;
                     z-index: 1;
+
+                    @include tablet {
+                        width: 293px;
+                        height: 424px;
+                    }
 
                     img {
                         width: 100%;
@@ -2010,15 +2417,24 @@ a {
         padding: 80px 0px;
         position: relative;
 
+        @include mobile {
+            padding: 60px 0px;
+        }
+
         .primary-header {
             color: #1E1E1E;
             margin-bottom: 48px;
             text-align: center;
+
+            @include mobile {
+                margin-bottom: 32px;
+            }
         }
 
         .nav-tabs {
             position: relative;
             z-index: 1;
+            border-bottom: none;
 
             .nav-link {
                 padding: 1rem 1rem;
@@ -2048,10 +2464,32 @@ a {
 
             .tab-content {
                 .tab-pane {
+
+                    @include mobile {
+                        margin-top: 20px;
+                    }
+
                     .first-content {
+
+                        @include mobile {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
                         .img-box {
                             width: 217px;
                             height: 222px;
+
+                            @include tablet {
+                                width: auto;
+                                height: auto;
+                            }
+
+                            @include mobile {
+                                width: 217px;
+                                height: 222px;
+                            }
 
                             img {
                                 width: 100%;
@@ -2062,6 +2500,11 @@ a {
                     }
 
                     .second-content {
+
+                        @include mobile {
+                            margin-top: 20px;
+                        }
+
                         .p-txt {
                             color: $primary-txt-color;
                             font-family: $assiatant;
@@ -2139,6 +2582,11 @@ a {
         top: -31px;
         bottom: 0;
         left: -96px;
+
+        @include mobile {
+            width: 186px;
+            height: 186px;
+        }
     }
 
     .second-round {
@@ -2150,6 +2598,10 @@ a {
         height: 715px;
         border-radius: 736px;
         background: rgba(252, 235, 164, 0.30);
+
+        @include mobile {
+            top: unset;
+        }
 
         .third-round {
             position: absolute;
@@ -2205,7 +2657,7 @@ a {
             }
         }
 
-        .main-home-round {}
+
     }
 }
 
@@ -2226,6 +2678,12 @@ a {
                 color: #FEFEFE;
                 margin-bottom: 24px;
                 padding: 0px 96px !important;
+
+                @include tablet {
+                    font-size: 36px;
+                    padding: 0px 20px !important;
+                    line-height: 46px;
+                }
             }
 
             ul {
@@ -2242,6 +2700,10 @@ a {
 
             .document-list {
                 padding: 0px 20px 0px 96px !important;
+
+                @include tablet {
+                    padding: 0px 20px 0px 20px !important;
+                }
 
                 .p-txt {
                     color: #FEFEFE;
@@ -2356,6 +2818,16 @@ a {
 .blog-first {
     background-color: $primary-bg;
 
+    .container {
+        &.blog-container {
+
+            @include mobile {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+        }
+    }
+
     .first-content {
         display: flex;
         justify-content: space-between;
@@ -2373,12 +2845,19 @@ a {
     .main-content {
         padding: 80px 0px 125px 0px;
 
-
+        @include mobile {
+            padding: 60px 0px 125px 0px;
+        }
 
         .primary-header {
             line-height: 65px;
             text-align: center;
             margin-bottom: 60px;
+
+            @include mobile {
+                line-height: 48px;
+                padding: 0px 20px;
+            }
 
             .stories {
                 color: #FECE05;
@@ -2402,6 +2881,14 @@ a {
             background-position-y: center;
             position: relative;
 
+            @include tablet {
+                width: auto;
+            }
+
+            @include mobile {
+                border-radius: 0px;
+            }
+
             .content-card {
                 border-radius: 10px;
                 border: 1px solid #CFCFCF;
@@ -2411,6 +2898,9 @@ a {
                 position: absolute;
                 bottom: -125px;
 
+                @include tablet {
+                    width: 80%;
+                }
 
             }
         }
@@ -2418,6 +2908,10 @@ a {
 
     .sec-main-content {
         padding: 60px 0px 24px 0px;
+
+        @include mobile {
+            padding: 60px 20px 24px 20px;
+        }
 
         .content {
             margin-bottom: 36px;
@@ -2428,6 +2922,16 @@ a {
                 margin-bottom: 18px;
                 overflow: hidden;
                 border-radius: 10px;
+
+                @include tablet {
+                    width: auto;
+                    height: 235px;
+                }
+
+                @include mobile {
+                    width: auto;
+                    height: auto;
+                }
 
                 img {
                     width: 100%;
@@ -2458,7 +2962,6 @@ a {
     }
 }
 
-
 //talk sec start
 .lets-talk {
     .main-content {
@@ -2472,12 +2975,28 @@ a {
             background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/talk.jpg");
             padding: 100px 0px 0px 96px;
 
+            @include tablet {
+                height: 450px;
+            }
+
+            @include mobile {
+                padding: 40px 20px 0px 20px;
+            }
+
             .content {
                 width: 50%;
+
+                @include mobile {
+                    width: 100%;
+                }
 
                 .primary-header {
                     color: #FEFEFE;
                     font-size: 64px;
+
+                    @include mobile {
+                        font-size: 36px;
+                    }
                 }
 
                 .p-txt {
@@ -2528,6 +3047,10 @@ a {
     .main-content {
         padding: 80px 0px;
 
+        @include mobile {
+            padding: 60px 0px;
+        }
+
         .para-txt {
             font-family: $bitter;
             color: #434241;
@@ -2565,7 +3088,7 @@ a {
                         }
                     }
 
-                    .contact-btn{
+                    .contact-btn {
                         display: flex;
                         justify-content: end;
                     }
@@ -2573,10 +3096,21 @@ a {
             }
 
             .sec-content {
+
+                @include mobile {
+                    margin-top: 40px;
+                }
+
                 .box {
                     border-bottom: 2px dashed #BCBBBA;
                     padding-bottom: 16px;
                     margin-bottom: 16px;
+
+                    &:last-child {
+                        border-bottom: none;
+                        margin-bottom: 0px;
+                        padding-bottom: 0px;
+                    }
 
                     .primary-header {
                         font-size: 32px;
