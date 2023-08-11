@@ -543,6 +543,11 @@ a {
 
                     &.show {
                         transform: translate3d(245px, -40px, 0px) !important;
+
+                        @include mobile {
+                            position: relative !important;
+                            transform: none !important;
+                        }
                     }
 
                     .dropdown-item {
@@ -611,6 +616,10 @@ a {
 
                 &.second-img-box {
                     background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url("./images/footer-bg-2.png"), lightgray 0px -106.535px / 100% 328.879% no-repeat;
+
+                    @include mobile {
+                        margin-top: 24px;
+                    }
                 }
 
                 @include tablet {
@@ -621,6 +630,7 @@ a {
                     align-items: center;
                     justify-content: center;
                 }
+
 
                 .box-txt {
                     color: #FFF;
@@ -836,6 +846,25 @@ a {
             display: flex;
             justify-content: space-between;
             margin-top: 40px;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .f-link {
+                &.other {
+                    @include mobile {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .left-strip {
+                @include mobile {
+                    order: 2;
+                }
+            }
         }
     }
 }
@@ -1141,6 +1170,7 @@ a {
 
             @include mobile {
                 gap: 20px 0px;
+                display: none;
             }
 
             .content {
@@ -1240,6 +1270,109 @@ a {
                 }
             }
         }
+
+        .mobile-div {
+            display: none;
+
+            @include mobile {
+                display: block;
+            }
+
+            .content {
+                &.second {
+                    display: flex;
+                    justify-content: end;
+                }
+
+                .img-box {
+
+                    width: auto;
+                    height: auto;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        // transition: all ease-in-out .4s;
+
+                        // &:hover {
+                        //     -webkit-transform: scale(1.1);
+                        //     -ms-transform: scale(1.1);
+                        //     transform: scale(1.1);
+                        //     transition: 1s ease;
+                        // }
+                    }
+                }
+
+                .p-txt {
+                    text-align: center;
+                    margin-top: 12px;
+                }
+            }
+
+            .sec-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                @include mobile {
+                    align-items: center;
+                    margin: 20px 0px;
+                }
+
+                .para-header {
+                    margin-bottom: 20px;
+                    color: #323130;
+
+                    @include mobile {
+                        text-align: center;
+                    }
+                }
+
+                .p-txt {
+                    margin-bottom: 24px;
+
+                    @include mobile {
+                        text-align: justify;
+                    }
+                }
+
+                .primary-btn {
+                    background-color: #161615;
+                    color: #FEFEFE;
+
+                    &:hover {
+                        &::before {
+                            background-image: radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, transparent 20%, #161615 20%, transparent 30%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, transparent 10%, #161615 15%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%);
+
+                        }
+
+                        &::after {
+                            background-image: radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, transparent 10%, #161615 15%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%),
+                                radial-gradient(circle, #161615 20%, transparent 20%);
+                            background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+                            background-position: 50% 0%;
+                            animation: greenbottomBubbles 0.6s ease;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 

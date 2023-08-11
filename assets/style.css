@@ -423,6 +423,12 @@ a:hover {
 .fixed-top .navbar-exp .inner-nav .navbar-nav .dropdown-menu.show {
   transform: translate3d(245px, -40px, 0px) !important;
 }
+@media (max-width: 526px) {
+  .fixed-top .navbar-exp .inner-nav .navbar-nav .dropdown-menu.show {
+    position: relative !important;
+    transform: none !important;
+  }
+}
 .fixed-top .navbar-exp .inner-nav .navbar-nav .dropdown-menu .dropdown-item {
   color: #434241;
   font-size: 20px;
@@ -474,6 +480,11 @@ a:hover {
 }
 .footer .main-content .footer-images .first-img-box.second-img-box {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./images/footer-bg-2.png"), lightgray 0px -106.535px/100% 328.879% no-repeat;
+}
+@media (max-width: 526px) {
+  .footer .main-content .footer-images .first-img-box.second-img-box {
+    margin-top: 24px;
+  }
 }
 @media (max-width: 912px) {
   .footer .main-content .footer-images .first-img-box {
@@ -638,6 +649,22 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+}
+@media (max-width: 526px) {
+  .footer .main-content .footer-strip {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 526px) {
+  .footer .main-content .footer-strip .f-link.other {
+    font-size: 14px;
+  }
+}
+@media (max-width: 526px) {
+  .footer .main-content .footer-strip .left-strip {
+    order: 2;
+  }
 }
 
 .home-sec {
@@ -828,6 +855,7 @@ a:hover {
 @media (max-width: 526px) {
   .our-service .main-content .row-service {
     gap: 20px 0px;
+    display: none;
   }
 }
 .our-service .main-content .row-service .content.second {
@@ -889,6 +917,73 @@ a:hover {
   background-image: radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, transparent 20%, #161615 20%, transparent 30%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, transparent 10%, #161615 15%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%);
 }
 .our-service .main-content .row-service .sec-content .primary-btn:hover::after {
+  background-image: radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, transparent 10%, #161615 15%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+.our-service .main-content .mobile-div {
+  display: none;
+}
+@media (max-width: 526px) {
+  .our-service .main-content .mobile-div {
+    display: block;
+  }
+}
+.our-service .main-content .mobile-div .content.second {
+  display: flex;
+  justify-content: end;
+}
+.our-service .main-content .mobile-div .content .img-box {
+  width: auto;
+  height: auto;
+}
+.our-service .main-content .mobile-div .content .img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.our-service .main-content .mobile-div .content .p-txt {
+  text-align: center;
+  margin-top: 12px;
+}
+.our-service .main-content .mobile-div .sec-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media (max-width: 526px) {
+  .our-service .main-content .mobile-div .sec-content {
+    align-items: center;
+    margin: 20px 0px;
+  }
+}
+.our-service .main-content .mobile-div .sec-content .para-header {
+  margin-bottom: 20px;
+  color: #323130;
+}
+@media (max-width: 526px) {
+  .our-service .main-content .mobile-div .sec-content .para-header {
+    text-align: center;
+  }
+}
+.our-service .main-content .mobile-div .sec-content .p-txt {
+  margin-bottom: 24px;
+}
+@media (max-width: 526px) {
+  .our-service .main-content .mobile-div .sec-content .p-txt {
+    text-align: justify;
+  }
+}
+.our-service .main-content .mobile-div .sec-content .primary-btn {
+  background-color: #161615;
+  color: #FEFEFE;
+}
+.our-service .main-content .mobile-div .sec-content .primary-btn:hover::before {
+  background-image: radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, transparent 20%, #161615 20%, transparent 30%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, transparent 10%, #161615 15%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%);
+}
+.our-service .main-content .mobile-div .sec-content .primary-btn:hover::after {
   background-image: radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, transparent 10%, #161615 15%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%), radial-gradient(circle, #161615 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
   background-position: 50% 0%;
