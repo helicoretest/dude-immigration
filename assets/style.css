@@ -2377,7 +2377,7 @@ a:hover {
 }
 @media (max-width: 526px) {
   .blog-first .main-content .img-box .content-card {
-    bottom: -430px;
+    bottom: -350px;
   }
 }
 .blog-first .sec-main-content {
@@ -2385,7 +2385,7 @@ a:hover {
 }
 @media (max-width: 526px) {
   .blog-first .sec-main-content {
-    padding: 355px 20px 24px 20px;
+    padding: 280px 20px 24px 20px;
   }
 }
 .blog-first .sec-main-content .content {

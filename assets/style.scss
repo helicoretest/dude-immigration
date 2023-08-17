@@ -3131,7 +3131,7 @@ a {
                 }
 
                 @include mobile {
-                    bottom: -430px;
+                    bottom: -350px;
                 }
 
             }
@@ -3142,7 +3142,7 @@ a {
         padding: 60px 0px 24px 0px;
 
         @include mobile {
-            padding: 355px 20px 24px 20px;
+            padding: 280px 20px 24px 20px;
         }
 
         .content {
