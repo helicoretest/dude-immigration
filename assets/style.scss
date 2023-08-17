@@ -2236,6 +2236,12 @@ a {
                     text-align: center;
                 }
             }
+            ul{
+                margin-left: 20px;
+                &.para-txt{
+                    font-weight: 500;
+                }
+            }
         }
     }
 }
@@ -2276,6 +2282,8 @@ a {
                 }
             }
         }
+
+       
     }
 }
 

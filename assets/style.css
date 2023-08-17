@@ -1637,6 +1637,12 @@ a:hover {
     text-align: center;
   }
 }
+.our-story .main-content .sec-content ul {
+  margin-left: 20px;
+}
+.our-story .main-content .sec-content ul.para-txt {
+  font-weight: 500;
+}
 
 .our-goal {
   background-color: #FFFCED;
