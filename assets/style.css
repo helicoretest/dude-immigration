@@ -795,7 +795,7 @@ a:hover {
 }
 @media (max-width: 526px) {
   .home-sec .main-content .second-sec .box .bottom-boxes {
-    left: -48px;
+    left: -35px;
   }
 }
 .home-sec .main-content .second-sec .box .bottom-boxes .count {
@@ -808,13 +808,18 @@ a:hover {
 }
 @media (max-width: 526px) {
   .home-sec .main-content .second-sec .box .bottom-boxes .count {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 .home-sec .main-content .second-sec .box .bottom-boxes .p-txt {
   font-size: 18px;
   text-align: center;
   color: #1C1A13;
+}
+@media (max-width: 526px) {
+  .home-sec .main-content .second-sec .box .bottom-boxes .p-txt {
+    font-size: 16px;
+  }
 }
 .home-sec .main-content .second-sec .box .bottom-boxes .f-box {
   width: 147px;
@@ -829,8 +834,8 @@ a:hover {
 }
 @media (max-width: 526px) {
   .home-sec .main-content .second-sec .box .bottom-boxes .f-box {
-    width: 130px;
-    height: 120px;
+    width: 120px;
+    height: 110px;
   }
 }
 .home-sec .main-content .second-sec .box .bottom-boxes .right-boxes {

@@ -734,7 +734,7 @@ a {
             margin-bottom: 16px;
             cursor: pointer;
 
-            @include tablet{
+            @include tablet {
                 font-size: 16px;
             }
 
@@ -770,7 +770,7 @@ a {
                     line-height: 22px;
                     margin-bottom: 20px;
 
-                    @include tablet{
+                    @include tablet {
                         font-size: 16px;
                     }
                 }
@@ -999,7 +999,7 @@ a {
                     bottom: -70px;
 
                     @include mobile {
-                        left: -48px;
+                        left: -35px;
                     }
 
                     .count {
@@ -1011,7 +1011,7 @@ a {
                         color: #1C1A13;
 
                         @include mobile {
-                            font-size: 30px;
+                            font-size: 22px;
                         }
                     }
 
@@ -1019,6 +1019,10 @@ a {
                         font-size: 18px;
                         text-align: center;
                         color: #1C1A13;
+
+                        @include mobile {
+                            font-size: 16px;
+                        }
                     }
 
                     .f-box {
@@ -1034,8 +1038,8 @@ a {
 
 
                         @include mobile {
-                            width: 130px;
-                            height: 120px;
+                            width: 120px;
+                            height: 110px;
                         }
 
                     }
@@ -1851,7 +1855,7 @@ a {
                     align-items: center;
                     justify-content: center;
 
-                    @include tablet{
+                    @include tablet {
                         padding: 60px 60px;
                     }
 
@@ -2273,7 +2277,8 @@ a {
 
     .main-content {
         padding: 60px 70px;
-        @include tablet{
+
+        @include tablet {
             padding: 60px 20px;
         }
 
@@ -2294,7 +2299,7 @@ a {
 
         .content {
 
-            @include tablet{
+            @include tablet {
                 display: flex;
                 align-items: end;
                 justify-content: center;
@@ -2367,15 +2372,15 @@ a {
                 }
             }
 
-            .arrow-box-tab{
+            .arrow-box-tab {
                 display: none;
 
-                @include tablet{
+                @include tablet {
                     display: block;
                     visibility: hidden;
                 }
 
-                @include mobile{
+                @include mobile {
                     display: none;
                 }
             }
@@ -2509,7 +2514,7 @@ a {
             .content {
                 z-index: 1;
 
-                @include mobile{
+                @include mobile {
                     order: 1;
                     margin-top: 0px;
                     margin-bottom: 30px;
@@ -2519,16 +2524,17 @@ a {
                     font-weight: 500;
                     color: #323130;
 
-                    @include mobile{
+                    @include mobile {
                         text-align: center;
                     }
                 }
             }
 
             .content-sec {
-                @include mobile{
+                @include mobile {
                     order: 2;
                 }
+
                 .bg-img-box {
                     position: absolute;
                     top: 30px;
@@ -2545,7 +2551,7 @@ a {
                         }
                     }
 
-                    @include mobile{
+                    @include mobile {
                         height: 532px;
                         right: 22px;
                     }
@@ -2579,7 +2585,7 @@ a {
             border-radius: 452px;
             background: rgba(252, 235, 164, 0.50);
 
-            @include mobile{
+            @include mobile {
                 width: 352px;
                 height: 352px;
             }
@@ -2591,7 +2597,7 @@ a {
                 border-radius: 385px;
                 background: rgba(252, 235, 164, 0.80);
 
-                @include mobile{
+                @include mobile {
                     width: 285px;
                     height: 285px;
                 }
@@ -2649,7 +2655,7 @@ a {
                     border-bottom: none !important;
                 }
 
-                @include mobile{
+                @include mobile {
                     text-align: center;
                 }
             }
@@ -2902,7 +2908,7 @@ a {
                     padding: 0px 20px 0px 20px !important;
                 }
 
-                @include mobile{
+                @include mobile {
                     padding: 0px 20px 20px 20px !important;
                 }
 
