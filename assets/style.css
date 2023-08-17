@@ -590,6 +590,13 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 526px) {
+  .footer .main-content .content .inner-content.mobile-sec {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+}
 .footer .main-content .content .inner-content .f-header {
   color: #FEFEFE;
   font-family: "Bitter", serif;
