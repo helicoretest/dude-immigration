@@ -1993,6 +1993,30 @@ a:hover {
     height: 285px;
   }
 }
+.student-visa.business-visa.work-permit {
+  position: relative;
+}
+.student-visa.business-visa.work-permit .main-content .content-sec .img-box {
+  width: 423px;
+  height: 534px;
+  z-index: 1;
+}
+@media (max-width: 912px) {
+  .student-visa.business-visa.work-permit .main-content .content-sec .img-box {
+    width: 293px;
+    height: 439px;
+  }
+}
+@media (max-width: 526px) {
+  .student-visa.business-visa.work-permit .main-content .content-sec .img-box {
+    width: 293px;
+    height: 424px;
+  }
+}
+.student-visa.business-visa.work-permit .main-content .content-sec .img-box img {
+  width: 100%;
+  height: 100%;
+}
 
 .envisioned-goal {
   background-color: #FEFEFE;

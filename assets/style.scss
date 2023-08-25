@@ -2620,7 +2620,38 @@ a {
                 }
             }
         }
+
+        &.work-permit{
+            position: relative;
+    
+            .main-content{
+                .content-sec {
+                    .img-box {
+                        width: 423px;
+                        height: 534px;
+                        z-index: 1;
+    
+                        @include tablet {
+                            width: 293px;
+                            height: 439px;
+                        }
+
+                        @include mobile {
+                            width: 293px;
+                            height: 424px;
+                        }
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
+
+    
 }
 
 //envisioned sec start
