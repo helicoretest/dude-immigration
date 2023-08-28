@@ -486,14 +486,14 @@ a {
                 }
             }
 
-            .logo {
-                margin-left: 100px;
+            // .logo {
+            //     margin-left: 100px;
 
-                @include mobile {
-                    margin-left: 0px;
-                }
-                
-            }
+            //     @include mobile {
+            //         margin-left: 0px;
+            //     }
+
+            // }
 
             .consultation-btn {
                 @include mobile {
@@ -888,6 +888,77 @@ a {
 
 //footer end
 
+//home banner sec start
+.home-sec-banner {
+    .main-content {
+        .bg-img-box {
+            background-image: url("./images/home-banner-image.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 680px;
+            background-position: center center;
+
+            @include tablet {
+                height: 500px;
+            }
+
+            @include mobile {
+                height: 580px;
+            }
+
+            .content {
+                padding: 60px 0px 0px 60px;
+
+
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                }
+
+                .img-box {
+                    width: 88.336px;
+                    height: 81.039px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .primary-header {
+                    width: 65%;
+                    margin-bottom: 40px;
+                    color: #FEFEFE;
+
+                    @include tablet {
+                        width: 85%;
+                        font-size: 36px;
+                        line-height: 48px;
+                    }
+
+                    @include mobile {
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    .white-txt {
+                        @include tablet {
+                            color: #1C1A13;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//home banner sec end
+
+
 //home sec start
 .home-sec {
     background-color: $primary-bg;
@@ -1252,6 +1323,7 @@ a {
 
                 .p-txt {
                     margin-bottom: 24px;
+                    font-size: 18px;
 
                     @include mobile {
                         text-align: justify;
@@ -2237,9 +2309,11 @@ a {
                     text-align: center;
                 }
             }
-            ul{
+
+            ul {
                 margin-left: 20px;
-                &.para-txt{
+
+                &.para-txt {
                     font-weight: 500;
                 }
             }
@@ -2284,7 +2358,7 @@ a {
             }
         }
 
-       
+
     }
 }
 
@@ -2426,6 +2500,249 @@ a {
 //about page end
 
 // student visa page start
+// student visa caro sec start
+.student-visa-caro {
+    .main-content {
+        .owl-carousel {
+            position: relative;
+            &.student-caro {
+                .content {
+                    .main-bg-box {
+                        background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-1.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        width: 100%;
+                        height: 680px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        .inner-content {
+                            padding: 60px 0px 0px 60px;
+
+
+                            @include mobile {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 20px;
+                            }
+
+
+                            .primary-header {
+                                width: 85%;
+                                margin-bottom: 40px;
+                                color: #FEFEFE;
+                                font-size: 36px;
+                                line-height: 48px;
+
+                                @include tablet {
+                                    font-size: 36px;
+                                    line-height: 48px;
+                                }
+
+                                @include mobile {
+                                    width: 100%;
+                                    text-align: center;
+                                }
+
+
+                            }
+                        }
+                    }
+
+                    &.second {
+                        .main-bg-box {
+                            background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-2.jpg");
+                        }
+                    }
+
+                    &.third {
+                        .main-bg-box {
+                            background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-3.jpg");
+
+                            .inner-content {
+                                .primary-header {
+                                    width: 90%;
+                                }
+                            }
+                        }
+                    }
+
+                    &.forth {
+                        .main-bg-box {
+                            background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-4.jpg");
+                        }
+                    }
+
+                }
+
+                .owl-dots {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    right: 50px;
+
+                    .owl-dot{
+                        &.active{
+                            span{
+                                background: #FECE05;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.work-caro {
+        .main-content {
+            .owl-carousel {
+                &.student-caro {
+                    .content {
+                        .main-bg-box {
+                            background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-1.jpg");
+                        }
+
+                        &.second{
+                            .main-bg-box {
+                                background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-2.png");
+                            }
+                        }
+
+                        &.third{
+                            .main-bg-box {
+                                background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-3.jpg");
+                            }
+                        }
+                        &.forth{
+                            .main-bg-box {
+                                background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-4.jpg");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.business-caro {
+        .main-content {
+            .owl-carousel {
+                &.student-caro {
+                    .content {
+                        .main-bg-box {
+                            background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-1.jpg");
+                        }
+
+                        &.second{
+                            .main-bg-box {
+                                background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-2.jpg");
+                            }
+                        }
+
+                        &.third{
+                            .main-bg-box {
+                                background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-3.png");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.pr-caro {
+        .main-content {
+            .owl-carousel {
+                &.student-caro {
+                    .content {
+                        .main-bg-box {
+                            background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-1.jpg");
+                        }
+
+                        &.second{
+                            .main-bg-box {
+                                background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-2.png");
+                            }
+                        }
+
+                        &.third{
+                            .main-bg-box {
+                                background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-3.jpg");
+                            }
+                        }
+                        &.forth{
+                            .main-bg-box {
+                                background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-4.jpg");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// visior-visa home sec start
+.visitor-visa-home {
+    .main-content {
+        .bg-img-box {
+            background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/visitor-visa-home.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 680px;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @include tablet {
+                height: 500px;
+            }
+
+            @include mobile {
+                height: 580px;
+            }
+
+            .content {
+                padding: 60px 0px 0px 60px;
+
+
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                }
+
+                .primary-header {
+                    width: 85%;
+                    margin-bottom: 40px;
+                    color: #FEFEFE;
+
+                    @include tablet {
+                        font-size: 36px;
+                        line-height: 48px;
+                    }
+
+                    @include mobile {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+// visior-visa home sec end
+// student visa caro sec emd
+
+// student visa sec start
 .student-visa {
     background-color: $primary-bg;
     position: relative;
@@ -2621,16 +2938,16 @@ a {
             }
         }
 
-        &.work-permit{
+        &.work-permit {
             position: relative;
-    
-            .main-content{
+
+            .main-content {
                 .content-sec {
                     .img-box {
                         width: 423px;
                         height: 534px;
                         z-index: 1;
-    
+
                         @include tablet {
                             width: 293px;
                             height: 439px;
@@ -2640,7 +2957,7 @@ a {
                             width: 293px;
                             height: 424px;
                         }
-    
+
                         img {
                             width: 100%;
                             height: 100%;
@@ -2651,8 +2968,12 @@ a {
         }
     }
 
-    
+
 }
+
+
+
+// student visa sec end
 
 //envisioned sec start
 .envisioned-goal {

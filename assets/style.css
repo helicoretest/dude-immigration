@@ -373,14 +373,6 @@ a:hover {
     order: 2;
   }
 }
-.fixed-top .navbar.main-nav .logo {
-  margin-left: 100px;
-}
-@media (max-width: 526px) {
-  .fixed-top .navbar.main-nav .logo {
-    margin-left: 0px;
-  }
-}
 @media (max-width: 526px) {
   .fixed-top .navbar.main-nav .consultation-btn {
     display: none;
@@ -684,6 +676,68 @@ a:hover {
   }
 }
 
+.home-sec-banner .main-content .bg-img-box {
+  background-image: url("./images/home-banner-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 680px;
+  background-position: center center;
+}
+@media (max-width: 912px) {
+  .home-sec-banner .main-content .bg-img-box {
+    height: 500px;
+  }
+}
+@media (max-width: 526px) {
+  .home-sec-banner .main-content .bg-img-box {
+    height: 580px;
+  }
+}
+.home-sec-banner .main-content .bg-img-box .content {
+  padding: 60px 0px 0px 60px;
+}
+@media (max-width: 526px) {
+  .home-sec-banner .main-content .bg-img-box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+.home-sec-banner .main-content .bg-img-box .content .img-box {
+  width: 88.336px;
+  height: 81.039px;
+}
+.home-sec-banner .main-content .bg-img-box .content .img-box img {
+  width: 100%;
+  height: 100%;
+}
+.home-sec-banner .main-content .bg-img-box .content .primary-header {
+  width: 65%;
+  margin-bottom: 40px;
+  color: #FEFEFE;
+}
+@media (max-width: 912px) {
+  .home-sec-banner .main-content .bg-img-box .content .primary-header {
+    width: 85%;
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 526px) {
+  .home-sec-banner .main-content .bg-img-box .content .primary-header {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 912px) {
+  .home-sec-banner .main-content .bg-img-box .content .primary-header .white-txt {
+    color: #1C1A13;
+  }
+}
+
 .home-sec {
   background-color: #FFFCED;
 }
@@ -926,6 +980,7 @@ a:hover {
 }
 .our-service .main-content .row-service .sec-content .p-txt {
   margin-bottom: 24px;
+  font-size: 18px;
 }
 @media (max-width: 526px) {
   .our-service .main-content .row-service .sec-content .p-txt {
@@ -1798,6 +1853,157 @@ a:hover {
 @media (max-width: 912px) {
   .our-process .main-content .content.sec .arrow-box-mobile {
     transform: translate(32px, 30px);
+  }
+}
+
+.student-visa-caro .main-content .owl-carousel {
+  position: relative;
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box .inner-content {
+  padding: 60px 0px 0px 60px;
+}
+@media (max-width: 526px) {
+  .student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box .inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box .inner-content .primary-header {
+  width: 85%;
+  margin-bottom: 40px;
+  color: #FEFEFE;
+  font-size: 36px;
+  line-height: 48px;
+}
+@media (max-width: 912px) {
+  .student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box .inner-content .primary-header {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 526px) {
+  .student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box .inner-content .primary-header {
+    width: 100%;
+    text-align: center;
+  }
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .content.second .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-2.jpg");
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-3.jpg");
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box .inner-content .primary-header {
+  width: 90%;
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .content.forth .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-4.jpg");
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .owl-dots {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+.student-visa-caro .main-content .owl-carousel.student-caro .owl-dots .owl-dot.active span {
+  background: #FECE05;
+}
+.student-visa-caro.work-caro .main-content .owl-carousel.student-caro .content .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-1.jpg");
+}
+.student-visa-caro.work-caro .main-content .owl-carousel.student-caro .content.second .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-2.png");
+}
+.student-visa-caro.work-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-3.jpg");
+}
+.student-visa-caro.work-caro .main-content .owl-carousel.student-caro .content.forth .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-4.jpg");
+}
+.student-visa-caro.business-caro .main-content .owl-carousel.student-caro .content .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-1.jpg");
+}
+.student-visa-caro.business-caro .main-content .owl-carousel.student-caro .content.second .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-2.jpg");
+}
+.student-visa-caro.business-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-3.png");
+}
+.student-visa-caro.pr-caro .main-content .owl-carousel.student-caro .content .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-1.jpg");
+}
+.student-visa-caro.pr-caro .main-content .owl-carousel.student-caro .content.second .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-2.png");
+}
+.student-visa-caro.pr-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-3.jpg");
+}
+.student-visa-caro.pr-caro .main-content .owl-carousel.student-caro .content.forth .main-bg-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-4.jpg");
+}
+
+.visitor-visa-home .main-content .bg-img-box {
+  background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/visitor-visa-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 680px;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 912px) {
+  .visitor-visa-home .main-content .bg-img-box {
+    height: 500px;
+  }
+}
+@media (max-width: 526px) {
+  .visitor-visa-home .main-content .bg-img-box {
+    height: 580px;
+  }
+}
+.visitor-visa-home .main-content .bg-img-box .content {
+  padding: 60px 0px 0px 60px;
+}
+@media (max-width: 526px) {
+  .visitor-visa-home .main-content .bg-img-box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+.visitor-visa-home .main-content .bg-img-box .content .primary-header {
+  width: 85%;
+  margin-bottom: 40px;
+  color: #FEFEFE;
+}
+@media (max-width: 912px) {
+  .visitor-visa-home .main-content .bg-img-box .content .primary-header {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 526px) {
+  .visitor-visa-home .main-content .bg-img-box .content .primary-header {
+    width: 100%;
+    text-align: center;
   }
 }
 
