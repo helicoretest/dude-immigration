@@ -166,9 +166,9 @@
                         <div class="inner-content">
                             <h1 class="primary-header">
                                 Do you want to unite with your loved ones? <br />
-                                We know how important they’re for you  <br />
-                                Would you want to sponsor them to Canada?  <br />
-                                WE can help !!!
+                                We know how important they’re for you <br />
+                                Would you want to sponsor them to Canada? <br />
+                                We can help !!!
                             </h1>
                             <button class="primary-btn">Book A Consultation</button>
                         </div>
@@ -1052,6 +1052,21 @@
                     items: 1,
                 },
             },
+        });
+    </script>
+
+    <script>
+        // Get references to the menu button and the menu itself
+        const menuButton = document.querySelector('.navbar-toggler');
+        const menu = document.querySelector('.collapse');
+
+        // Add a click event listener to the document
+        document.addEventListener('click', function (event) {
+            // Check if the clicked element is outside the menu and the menu button
+            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                // Close the menu
+                menu.classList.remove('show'); // This removes the "show" class to hide the menu
+            }
         });
     </script>
 </body>

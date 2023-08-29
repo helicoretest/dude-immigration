@@ -392,28 +392,28 @@
                                 <div class="value">
                                     <h1 class="primary-header">Value</h1>
                                     <div class="row">
-                                      <div class="col-xl-6 cl-lg-6 col-md-6 col-12 col-sm-12">
-                                        <ul class="p-txt">
-                                          <li>Free Skill Level Assessment</li>
-                                          <li>Children Application Preparation & Submission</li>
-                                          <li>Application Build-up</li>
-                                          <li>Application Explanation Letter</li>
-                                          <li>Resume Build-up Assistance</li>
-                                          <li>Experience Letter Templates or Alternatives</li>
-                                        </ul>
-                                      </div>
-                                      <div class="col-xl-6 cl-lg-6 col-md-6 col-12 col-sm-12">
-                                        <ul class="p-txt">
-                                          <li>Interview Preparation</li>
-                                          <li>Post Submission Enquiry Response</li>
-                                          <li>Police Clearance Certificate Assistance</li>
-                                          <li>Biometric Appointment Assistance</li>
-                                          <li>Passport Submission Assistance</li>
-                                          <li>Landing Assistance</li>
-                                        </ul>
-                                      </div>
+                                        <div class="col-xl-6 cl-lg-6 col-md-6 col-12 col-sm-12">
+                                            <ul class="p-txt">
+                                                <li>Free Skill Level Assessment</li>
+                                                <li>Children Application Preparation & Submission</li>
+                                                <li>Application Build-up</li>
+                                                <li>Application Explanation Letter</li>
+                                                <li>Resume Build-up Assistance</li>
+                                                <li>Experience Letter Templates or Alternatives</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-6 cl-lg-6 col-md-6 col-12 col-sm-12">
+                                            <ul class="p-txt">
+                                                <li>Interview Preparation</li>
+                                                <li>Post Submission Enquiry Response</li>
+                                                <li>Police Clearance Certificate Assistance</li>
+                                                <li>Biometric Appointment Assistance</li>
+                                                <li>Passport Submission Assistance</li>
+                                                <li>Landing Assistance</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
 
                         </div>
@@ -910,6 +910,21 @@
                     items: 1,
                 },
             },
+        });
+    </script>
+
+    <script>
+        // Get references to the menu button and the menu itself
+        const menuButton = document.querySelector('.navbar-toggler');
+        const menu = document.querySelector('.collapse');
+
+        // Add a click event listener to the document
+        document.addEventListener('click', function (event) {
+            // Check if the clicked element is outside the menu and the menu button
+            if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+                // Close the menu
+                menu.classList.remove('show'); // This removes the "show" class to hide the menu
+            }
         });
     </script>
 </body>
