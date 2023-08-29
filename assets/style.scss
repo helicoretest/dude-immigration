@@ -2518,6 +2518,14 @@ a {
                         flex-direction: column;
                         justify-content: center;
 
+                        @include tablet{
+                            height: 500px;
+                        }
+
+                        @include tablet{
+                            height: 580px;
+                        }
+
                         .inner-content {
                             padding: 60px 0px 0px 60px;
 
@@ -2539,6 +2547,7 @@ a {
                                 line-height: 48px;
 
                                 @include tablet {
+                                    width: 95%;
                                     font-size: 36px;
                                     line-height: 48px;
                                 }
@@ -2546,6 +2555,8 @@ a {
                                 @include mobile {
                                     width: 100%;
                                     text-align: center;
+                                    font-size: 26px;
+                                    line-height: 36px;
                                 }
 
 
@@ -2566,6 +2577,14 @@ a {
                             .inner-content {
                                 .primary-header {
                                     width: 90%;
+
+                                    @include tablet{
+                                        width: 95%;
+                                    }
+
+                                    @include mobile{
+                                        width: 100%;
+                                    }
                                 }
                             }
                         }
@@ -2609,6 +2628,10 @@ a {
                         &.second{
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-2.png");
+
+                                @include mobile{
+                                    background-position-x: 16%;
+                                }
                             }
                         }
 
@@ -2646,6 +2669,10 @@ a {
                         &.third{
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-3.png");
+
+                                @include mobile{
+                                    background-position-x: 10%;
+                                }
                             }
                         }
                     }
@@ -2704,9 +2731,7 @@ a {
                 height: 500px;
             }
 
-            @include mobile {
-                height: 580px;
-            }
+
 
             .content {
                 padding: 60px 0px 0px 60px;

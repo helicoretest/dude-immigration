@@ -1870,6 +1870,16 @@ a:hover {
   flex-direction: column;
   justify-content: center;
 }
+@media (max-width: 912px) {
+  .student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box {
+    height: 500px;
+  }
+}
+@media (max-width: 912px) {
+  .student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box {
+    height: 580px;
+  }
+}
 .student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box .inner-content {
   padding: 60px 0px 0px 60px;
 }
@@ -1891,6 +1901,7 @@ a:hover {
 }
 @media (max-width: 912px) {
   .student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box .inner-content .primary-header {
+    width: 95%;
     font-size: 36px;
     line-height: 48px;
   }
@@ -1899,6 +1910,8 @@ a:hover {
   .student-visa-caro .main-content .owl-carousel.student-caro .content .main-bg-box .inner-content .primary-header {
     width: 100%;
     text-align: center;
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 .student-visa-caro .main-content .owl-carousel.student-caro .content.second .main-bg-box {
@@ -1909,6 +1922,16 @@ a:hover {
 }
 .student-visa-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box .inner-content .primary-header {
   width: 90%;
+}
+@media (max-width: 912px) {
+  .student-visa-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box .inner-content .primary-header {
+    width: 95%;
+  }
+}
+@media (max-width: 526px) {
+  .student-visa-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box .inner-content .primary-header {
+    width: 100%;
+  }
 }
 .student-visa-caro .main-content .owl-carousel.student-caro .content.forth .main-bg-box {
   background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/student-caro-4.jpg");
@@ -1928,6 +1951,11 @@ a:hover {
 .student-visa-caro.work-caro .main-content .owl-carousel.student-caro .content.second .main-bg-box {
   background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-2.png");
 }
+@media (max-width: 526px) {
+  .student-visa-caro.work-caro .main-content .owl-carousel.student-caro .content.second .main-bg-box {
+    background-position-x: 16%;
+  }
+}
 .student-visa-caro.work-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box {
   background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-3.jpg");
 }
@@ -1942,6 +1970,11 @@ a:hover {
 }
 .student-visa-caro.business-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box {
   background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-3.png");
+}
+@media (max-width: 526px) {
+  .student-visa-caro.business-caro .main-content .owl-carousel.student-caro .content.third .main-bg-box {
+    background-position-x: 10%;
+  }
 }
 .student-visa-caro.pr-caro .main-content .owl-carousel.student-caro .content .main-bg-box {
   background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-1.jpg");
@@ -1970,11 +2003,6 @@ a:hover {
 @media (max-width: 912px) {
   .visitor-visa-home .main-content .bg-img-box {
     height: 500px;
-  }
-}
-@media (max-width: 526px) {
-  .visitor-visa-home .main-content .bg-img-box {
-    height: 580px;
   }
 }
 .visitor-visa-home .main-content .bg-img-box .content {
