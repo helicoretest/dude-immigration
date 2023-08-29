@@ -114,56 +114,56 @@
   </div>
   <!-- navbar end -->
 
-    <!-- business visa caro sec start -->
-    <div class="student-visa-caro business-caro sec-gap">
-      <div class="main-content">
-        <div class="owl-carousel owl-theme student-caro">
-          <div class="content">
-            <div class="main-bg-box">
-              <div class="inner-content">
-                <h1 class="primary-header">
-                  Do you wish to set up a business in Canada? <br/>
-                  You can immigrate to Canada through Start-Up Visa program. <br/>
-                  Call Us to know more….
-                </h1>
-                <button class="primary-btn">Book A Consultation</button>
-              </div>
+  <!-- business visa caro sec start -->
+  <div class="student-visa-caro business-caro sec-gap">
+    <div class="main-content">
+      <div class="owl-carousel owl-theme student-caro">
+        <div class="content">
+          <div class="main-bg-box">
+            <div class="inner-content">
+              <h1 class="primary-header">
+                Do you wish to set up a business in Canada? <br />
+                You can immigrate to Canada through Start-Up Visa program. <br />
+                Call Us to know more….
+              </h1>
+              <button class="primary-btn">Book A Consultation</button>
             </div>
           </div>
-  
-          <div class="content second">
-            <div class="main-bg-box">
-              <div class="inner-content">
-                <h1 class="primary-header">
-                  Are you thinking to settle in Canada as a self-employed person? <br/>
-                  Canada has its doors open for you through Self-Employed Person program. <br/>
-                  We can help.
-                </h1>
-                <button class="primary-btn">Book A Consultation</button>
-              </div>
-            </div>
-          </div>
-  
-          <div class="content third">
-            <div class="main-bg-box">
-              <div class="inner-content">
-                <h1 class="primary-header">
-                  Do you belong to Care-giving industry? <br/>
-                  You are in-demand and can apply for PR. <br/>
-                  Contact us to Apply!
-                  
-                </h1>
-                <button class="primary-btn">Book A Consultation</button>
-              </div>
-            </div>
-          </div>
-  
-          
         </div>
+
+        <div class="content second">
+          <div class="main-bg-box">
+            <div class="inner-content">
+              <h1 class="primary-header">
+                Are you thinking to settle in Canada as a self-employed person? <br />
+                Canada has its doors open for you through Self-Employed Person program. <br />
+                We can help.
+              </h1>
+              <button class="primary-btn">Book A Consultation</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="content third">
+          <div class="main-bg-box">
+            <div class="inner-content">
+              <h1 class="primary-header">
+                Do you belong to Care-giving industry? <br />
+                You are in-demand and can apply for PR. <br />
+                Contact us to Apply!
+
+              </h1>
+              <button class="primary-btn">Book A Consultation</button>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
-    <!-- business visa caro sec end -->
-  
+  </div>
+  <!-- business visa caro sec end -->
+
 
   <!-- student visa sec start -->
   <!-- <div class="student-visa business-visa sec-gap">
@@ -285,7 +285,7 @@
                     <button class="primary-btn">Book A Consultation</button>
                   </div>
                 </div>
-   
+
                 <div class="value">
                   <h1 class="primary-header">Requirements</h1>
                   <div class="row">
@@ -753,7 +753,7 @@
                   <h4 class="f-header">Helpful Links</h4>
                   <a href="./visitorvisa.html">
                     <h4 class="f-link">Visiting visa</h4>
-                    </a>
+                  </a>
                   <a href="./studentvisa.html">
                     <h4 class="f-link">Student visa</h4>
                   </a>
@@ -761,9 +761,11 @@
                     <h4 class="f-link">Business Visa</h4>
                   </a>
                   <a href="./workpermit.html">
-                  <h4 class="f-link">Work permit</h4></a>
+                    <h4 class="f-link">Work permit</h4>
+                  </a>
                   <a href="./permanentresident.html">
-                  <h4 class="f-link">Permanent resident</h4></a>
+                    <h4 class="f-link">Permanent resident</h4>
+                  </a>
                 </div>
               </div>
             </div>
@@ -851,6 +853,21 @@
   </script>
 
   <script>
+    // Get references to the menu button and the menu itself
+    const menuButton = document.querySelector('.navbar-toggler');
+    const menu = document.querySelector('.collapse');
+
+    // Add a click event listener to the document
+    document.addEventListener('click', function (event) {
+      // Check if the clicked element is outside the menu and the menu button
+      if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+        // Close the menu
+        menu.classList.remove('show'); // This removes the "show" class to hide the menu
+      }
+    });
+  </script>
+
+  <script>
     $(".blog-caro").owlCarousel({
       loop: true,
       responsiveClass: true,
@@ -869,41 +886,30 @@
     });
   </script>
 
-<script>
-  $(".student-caro").owlCarousel({
-    autoPlay: false,
-    loop: true,
-    responsiveClass: true,
-    dots: true,
-    center: true,
-    responsive: {
-      0: {
-        items: 1,
+  <script>
+    $(".student-caro").owlCarousel({
+      loop: true,
+      responsiveClass: true,
+      dots: true,
+      center: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
       },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
-    },
-  });
-</script>
+    });
+  </script>
 
-<script>
-  // Get references to the menu button and the menu itself
-  const menuButton = document.querySelector('.navbar-toggler');
-  const menu = document.querySelector('.collapse');
 
-  // Add a click event listener to the document
-  document.addEventListener('click', function (event) {
-    // Check if the clicked element is outside the menu and the menu button
-    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
-      // Close the menu
-      menu.classList.remove('show'); // This removes the "show" class to hide the menu
-    }
-  });
-</script>
 </body>
 
 </html>

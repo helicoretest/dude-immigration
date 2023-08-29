@@ -135,7 +135,7 @@
             <div class="inner-content">
               <h1 class="primary-header">
                 ARE YOU ALREADY AN INTERNATIONAL STUDENT
-                &amp; HAVE QUESTIONS REGARDING FURTHER STEPS <br/>
+                &amp; HAVE QUESTIONS REGARDING FURTHER STEPS <br />
                 WE ARE OPEN TO ALL YOUR QUERIES
               </h1>
               <button class="primary-btn">Book A Consultation</button>
@@ -147,10 +147,10 @@
           <div class="main-bg-box">
             <div class="inner-content">
               <h1 class="primary-header">
-                ARE YOU A YOUNG GRADUATE OR AN EXPERIENCED PROFESSIONAL PLANNING TO TAKE A BREAK FROM <br/>
-                YOUR JOB? <br/>
-                You can study in Canada no matter what stage of your career you are at… <br/>
-                
+                ARE YOU A YOUNG GRADUATE OR AN EXPERIENCED PROFESSIONAL PLANNING TO TAKE A BREAK FROM <br />
+                YOUR JOB? <br />
+                You can study in Canada no matter what stage of your career you are at… <br />
+
               </h1>
               <button class="primary-btn">Call Us TODAY</button>
             </div>
@@ -1025,11 +1025,13 @@
 
   <script>
     $(".student-caro").owlCarousel({
-      autoPlay: false,
       loop: true,
       responsiveClass: true,
       dots: true,
       center: true,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
       responsive: {
         0: {
           items: 1,
@@ -1044,20 +1046,20 @@
     });
   </script>
 
-<script>
-  // Get references to the menu button and the menu itself
-  const menuButton = document.querySelector('.navbar-toggler');
-  const menu = document.querySelector('.collapse');
+  <script>
+    // Get references to the menu button and the menu itself
+    const menuButton = document.querySelector('.navbar-toggler');
+    const menu = document.querySelector('.collapse');
 
-  // Add a click event listener to the document
-  document.addEventListener('click', function (event) {
-    // Check if the clicked element is outside the menu and the menu button
-    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
-      // Close the menu
-      menu.classList.remove('show'); // This removes the "show" class to hide the menu
-    }
-  });
-</script>
+    // Add a click event listener to the document
+    document.addEventListener('click', function (event) {
+      // Check if the clicked element is outside the menu and the menu button
+      if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+        // Close the menu
+        menu.classList.remove('show'); // This removes the "show" class to hide the menu
+      }
+    });
+  </script>
 </body>
 
 </html>
