@@ -207,9 +207,13 @@
                 <span class="min">Consultaion</span>
               </h4>
             </div>
+
             <div class="arrow-box-mobile">
               <img src="./assets/images/process-arrow-mobile-1.svg" class="img-fluid" />
             </div>
+            <!-- <h6 class="primary-header">01.</h6> -->
+
+
           </div>
           <div class="col-xl-3 col-lg-3 cl-md-3 col-12 col-sm-12 content sec">
             <div class="arrow-box-mobile">
@@ -524,20 +528,20 @@
     });
   </script>
 
-<script>
-  // Get references to the menu button and the menu itself
-  const menuButton = document.querySelector('.navbar-toggler');
-  const menu = document.querySelector('.collapse');
+  <script>
+    // Get references to the menu button and the menu itself
+    const menuButton = document.querySelector('.navbar-toggler');
+    const menu = document.querySelector('.collapse');
 
-  // Add a click event listener to the document
-  document.addEventListener('click', function (event) {
-    // Check if the clicked element is outside the menu and the menu button
-    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
-      // Close the menu
-      menu.classList.remove('show'); // This removes the "show" class to hide the menu
-    }
-  });
-</script>
+    // Add a click event listener to the document
+    document.addEventListener('click', function (event) {
+      // Check if the clicked element is outside the menu and the menu button
+      if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+        // Close the menu
+        menu.classList.remove('show'); // This removes the "show" class to hide the menu
+      }
+    });
+  </script>
 </body>
 
 </html>

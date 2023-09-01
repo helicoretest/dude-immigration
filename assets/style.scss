@@ -327,9 +327,7 @@ a {
 }
 
 .sec-gap {
-    padding-top: 62px;
-
-
+    padding-top: 80px;
 }
 
 
@@ -2213,7 +2211,7 @@ a {
         }
 
         @include mobile {
-            height: 480px;
+            height: auto;
         }
 
         img {
@@ -2313,6 +2311,10 @@ a {
             ul {
                 margin-left: 20px;
 
+                @include mobile{
+                    list-style: none;
+                }
+
                 &.para-txt {
                     font-weight: 500;
                 }
@@ -2346,6 +2348,10 @@ a {
                 @include tablet {
                     width: 100%;
                 }
+
+                @include mobile{
+                    text-align: center;
+                }
             }
 
             .para-txt {
@@ -2354,6 +2360,11 @@ a {
                 @include tablet {
                     margin-top: 18px;
                     margin-left: 100px;
+                }
+
+                @include mobile{
+                    margin-left: 0px;
+                    text-align: center;
                 }
             }
         }

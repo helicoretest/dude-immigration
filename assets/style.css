@@ -240,7 +240,7 @@ a:hover {
 }
 
 .sec-gap {
-  padding-top: 62px;
+  padding-top: 80px;
 }
 
 .faq {
@@ -1603,7 +1603,7 @@ a:hover {
 }
 @media (max-width: 526px) {
   .flag-sec .img-box {
-    height: 480px;
+    height: auto;
   }
 }
 .flag-sec .img-box img {
@@ -1695,6 +1695,11 @@ a:hover {
 .our-story .main-content .sec-content ul {
   margin-left: 20px;
 }
+@media (max-width: 526px) {
+  .our-story .main-content .sec-content ul {
+    list-style: none;
+  }
+}
 .our-story .main-content .sec-content ul.para-txt {
   font-weight: 500;
 }
@@ -1726,6 +1731,11 @@ a:hover {
     width: 100%;
   }
 }
+@media (max-width: 526px) {
+  .our-goal .main-content .content .para-header {
+    text-align: center;
+  }
+}
 .our-goal .main-content .content .para-txt {
   margin-top: 48px;
 }
@@ -1733,6 +1743,12 @@ a:hover {
   .our-goal .main-content .content .para-txt {
     margin-top: 18px;
     margin-left: 100px;
+  }
+}
+@media (max-width: 526px) {
+  .our-goal .main-content .content .para-txt {
+    margin-left: 0px;
+    text-align: center;
   }
 }
 
