@@ -1878,35 +1878,7 @@ a {
                     }
                 }
 
-                .primary-btn {
-                    color: #1C1A13;
-                    background-color: #FEFEFE;
-
-                    &:hover {
-                        &::before {
-                            background-image: radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, transparent 20%, #FEFEFE 20%, transparent 30%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, transparent 10%, #FEFEFE 15%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%);
-
-                        }
-
-                        &::after {
-                            background-image: radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, transparent 10%, #FEFEFE 15%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%),
-                                radial-gradient(circle, #FEFEFE 20%, transparent 20%);
-                        }
-                    }
-                }
+               
             }
         }
     }

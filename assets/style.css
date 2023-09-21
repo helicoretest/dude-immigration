@@ -1351,16 +1351,6 @@ a:hover {
     margin-bottom: 14px;
   }
 }
-.cta .main-content .bg-img .content .primary-btn {
-  color: #1C1A13;
-  background-color: #FEFEFE;
-}
-.cta .main-content .bg-img .content .primary-btn:hover::before {
-  background-image: radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, transparent 20%, #FEFEFE 20%, transparent 30%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, transparent 10%, #FEFEFE 15%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%);
-}
-.cta .main-content .bg-img .content .primary-btn:hover::after {
-  background-image: radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, transparent 10%, #FEFEFE 15%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%), radial-gradient(circle, #FEFEFE 20%, transparent 20%);
-}
 .cta.about .main-content .bg-img {
   align-items: center;
   justify-content: center;
