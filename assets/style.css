@@ -2561,7 +2561,6 @@ a:hover {
   justify-content: end;
 }
 .how-we-work .main-content .sec-content .img-box img {
-  filter: grayscale(1);
   width: 100%;
   height: 100%;
 }
