@@ -3366,11 +3366,21 @@ a {
                     font-size: 28px;
                     line-height: 33px;
                 }
+
+                &.title{
+                    font-size: 34px;
+
+                    @include mobile {
+                        font-size: 26px;
+                        line-height: 33px;
+                        margin-bottom: 12px;
+                    }
+                }
             }
 
             .box {
                 border-radius: 8px;
-                border: 1px solid #BCBBBA;
+                border: 1px solid #1C1A13;
                 padding: 20px;
 
                 .p-txt {
