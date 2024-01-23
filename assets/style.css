@@ -228,6 +228,11 @@ a:hover {
   text-decoration: none !important;
 }
 
+.inner-link {
+  color: #eac012;
+  text-decoration: underline;
+}
+
 .container {
   padding-left: 0px !important;
   padding-right: 0px !important;
@@ -345,6 +350,19 @@ a:hover {
   line-height: normal;
   color: #616160;
   font-family: "Assistant", sans-serif;
+}
+.accordion .card .card-body.para-txt a {
+  color: #eac012;
+  text-decoration: underline;
+}
+.accordion .card .card-body.para-txt .second-header {
+  color: #1E1E1E;
+}
+.accordion .card .card-body.para-txt .inner-list {
+  margin-left: 20px;
+}
+.accordion .card .card-body.para-txt .inner-list .inner-span {
+  color: #1E1E1E;
 }
 
 .fixed-top {
@@ -938,13 +956,15 @@ a:hover {
   justify-content: end;
 }
 .our-service .main-content .row-service .content .img-box {
-  width: 532px;
-  height: 514px;
+  max-width: 555px;
+  max-height: 514px;
+  width: auto;
+  height: auto;
 }
 @media (max-width: 912px) {
   .our-service .main-content .row-service .content .img-box {
-    width: auto;
-    height: auto;
+    width: auto !important;
+    height: auto !important;
   }
 }
 .our-service .main-content .row-service .content .img-box img {
@@ -1150,13 +1170,13 @@ a:hover {
   }
 }
 .choose-us .main-content .content .img-box {
-  width: 439px;
-  height: 380px;
+  max-width: 450px;
+  max-height: 300px;
 }
 @media (max-width: 912px) {
   .choose-us .main-content .content .img-box {
     width: auto;
-    height: 320px;
+    max-height: 320px;
   }
 }
 @media (max-width: 526px) {

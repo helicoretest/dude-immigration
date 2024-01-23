@@ -316,6 +316,11 @@ a {
     }
 }
 
+.inner-link {
+    color: #eac012;
+    text-decoration: underline;
+}
+
 .container {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -451,6 +456,24 @@ a {
                 line-height: normal;
                 color: #616160;
                 font-family: $assiatant;
+
+                a {
+                    color: #eac012;
+                    text-decoration: underline;
+                }
+
+                .second-header {
+                    color: #1E1E1E;
+                }
+
+                .inner-list {
+                    margin-left: 20px;
+
+                    .inner-span {
+                        color: #1E1E1E;
+                    }
+                }
+
             }
         }
     }
@@ -1269,13 +1292,20 @@ a {
                 }
 
                 .img-box {
-                    width: 532px;
-                    height: 514px;
+                    // width: 532px;
+                    // height: 514px;
+                    max-width: 555px;
+                    max-height: 514px;
+                    width: auto;
+                    height: auto;
 
                     @include tablet {
-                        width: auto;
-                        height: auto;
+                        width: auto !important;
+                        height: auto !important;
                     }
+
+
+
 
                     img {
                         width: 100%;
@@ -1289,6 +1319,8 @@ a {
                         //     transform: scale(1.1);
                         //     transition: 1s ease;
                         // }
+
+
                     }
                 }
 
@@ -1654,12 +1686,12 @@ a {
 
         .content {
             .img-box {
-                width: 439px;
-                height: 380px;
+                max-width: 450px;
+                max-height: 300px;
 
                 @include tablet {
                     width: auto;
-                    height: 320px;
+                    max-height: 320px;
                 }
 
                 @include mobile {
@@ -1878,7 +1910,7 @@ a {
                     }
                 }
 
-               
+
             }
         }
     }
@@ -2283,7 +2315,7 @@ a {
             ul {
                 margin-left: 20px;
 
-                @include mobile{
+                @include mobile {
                     list-style: none;
                 }
 
@@ -2321,7 +2353,7 @@ a {
                     width: 100%;
                 }
 
-                @include mobile{
+                @include mobile {
                     text-align: center;
                 }
             }
@@ -2334,7 +2366,7 @@ a {
                     margin-left: 100px;
                 }
 
-                @include mobile{
+                @include mobile {
                     margin-left: 0px;
                     text-align: center;
                 }
@@ -2488,6 +2520,7 @@ a {
     .main-content {
         .owl-carousel {
             position: relative;
+
             &.student-caro {
                 .content {
                     .main-bg-box {
@@ -2501,11 +2534,11 @@ a {
                         flex-direction: column;
                         justify-content: center;
 
-                        @include tablet{
+                        @include tablet {
                             height: 500px;
                         }
 
-                        @include tablet{
+                        @include tablet {
                             height: 580px;
                         }
 
@@ -2561,11 +2594,11 @@ a {
                                 .primary-header {
                                     width: 90%;
 
-                                    @include tablet{
+                                    @include tablet {
                                         width: 95%;
                                     }
 
-                                    @include mobile{
+                                    @include mobile {
                                         width: 100%;
                                     }
                                 }
@@ -2587,9 +2620,9 @@ a {
                     bottom: 0;
                     right: 50px;
 
-                    .owl-dot{
-                        &.active{
-                            span{
+                    .owl-dot {
+                        &.active {
+                            span {
                                 background: #FECE05;
                             }
                         }
@@ -2608,22 +2641,23 @@ a {
                             background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-1.jpg");
                         }
 
-                        &.second{
+                        &.second {
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-2.png");
 
-                                @include mobile{
+                                @include mobile {
                                     background-position-x: 16%;
                                 }
                             }
                         }
 
-                        &.third{
+                        &.third {
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-3.jpg");
                             }
                         }
-                        &.forth{
+
+                        &.forth {
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/work-caro-4.jpg");
                             }
@@ -2643,17 +2677,17 @@ a {
                             background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-1.jpg");
                         }
 
-                        &.second{
+                        &.second {
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-2.jpg");
                             }
                         }
 
-                        &.third{
+                        &.third {
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/business-caro-3.png");
 
-                                @include mobile{
+                                @include mobile {
                                     background-position-x: 10%;
                                 }
                             }
@@ -2673,18 +2707,19 @@ a {
                             background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-1.jpg");
                         }
 
-                        &.second{
+                        &.second {
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-2.png");
                             }
                         }
 
-                        &.third{
+                        &.third {
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-3.jpg");
                             }
                         }
-                        &.forth{
+
+                        &.forth {
                             .main-bg-box {
                                 background-image: linear-gradient(140deg, rgba(60, 4, 4, 0.46) 0%, rgba(48, 6, 6, 0.23) 100%), url("./images/pr-caro-4.jpg");
                             }
@@ -2747,6 +2782,7 @@ a {
         }
     }
 }
+
 // visior-visa home sec end
 // student visa caro sec emd
 
@@ -3367,7 +3403,7 @@ a {
                     line-height: 33px;
                 }
 
-                &.title{
+                &.title {
                     font-size: 34px;
 
                     @include mobile {
