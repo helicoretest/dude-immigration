@@ -592,13 +592,7 @@ a:hover {
   color: #FAFAFA;
 }
 .footer .main-content .content .logo-img {
-  width: 129px;
-  height: 64px;
   margin-bottom: 24px;
-}
-.footer .main-content .content .logo-img img {
-  width: 100%;
-  height: 100%;
 }
 @media (max-width: 526px) {
   .footer .main-content .content .inner-content.mobile-sec {
@@ -1579,6 +1573,22 @@ a:hover {
   .blog .main-content .blog-caro {
     display: block;
   }
+}
+
+.helipad-insignia {
+  background-color: #FFFCCF;
+}
+.helipad-insignia .main-content {
+  padding: 60px 0px;
+}
+@media (max-width: 912px) {
+  .helipad-insignia .main-content {
+    padding: 20px 0px;
+  }
+}
+.helipad-insignia .main-content .first-col {
+  display: flex;
+  justify-content: center;
 }
 
 .culture {
