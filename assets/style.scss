@@ -335,6 +335,28 @@ a {
     padding-top: 80px;
 }
 
+::-webkit-file-upload-button {
+    opacity: 0;
+    display: none;
+}
+
+.upload-file {
+    position: relative;
+    cursor: pointer;
+
+    i {
+        font-size: 1.5rem;
+        position: absolute;
+        right: 1rem;
+        color: #333;
+        top: 2.3rem;
+
+    }
+
+    .upload-cv {
+        color: #495057;
+    }
+}
 
 .faq {
     background-color: $secondary-bg;
@@ -469,7 +491,7 @@ a {
                 .inner-list {
                     margin-left: 20px;
 
-                    .inner-span { 
+                    .inner-span {
                         color: #1E1E1E;
                     }
                 }
@@ -481,136 +503,295 @@ a {
 
 //common end
 
-//navbar start
-.fixed-top {
-    z-index: 1111;
+.navbar {
+    // padding: 1rem 1rem !important;
 
-    .navbar {
-        padding: 0.5rem 4rem;
-        z-index: 1111;
-
-        @include mobile {
-            padding: 0.5rem 1rem;
-        }
-
-        &.main-nav {
-            background-color: rgba(255, 255, 255, 0.50) !important;
-            z-index: 1111;
-
-            backdrop-filter: blur(54.5px);
-
-            .navbar-toggler {
-                padding: 0.25rem 0rem;
-
-                @include mobile {
-                    order: 2;
-                }
-            }
-
-            // .logo {
-            //     margin-left: 100px;
-
-            //     @include mobile {
-            //         margin-left: 0px;
-            //     }
-
-            // }
-
-            .consultation-btn {
-                @include mobile {
-                    display: none;
-                }
-            }
-        }
+    @include tablet {
+        padding: 0.2rem 0rem !important;
     }
 
-
-
-    .navbar-exp {
-        padding: 30px 0px 70px 0px;
+    &.main-nav {
         background-color: rgba(255, 255, 255, 0.50) !important;
+        z-index: 1111;
         backdrop-filter: blur(54.5px);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
 
-        .inner-nav {
-            display: flex;
-            padding: 0 4rem;
+        .navbar-brand {
+            @include tablet {
+                padding-left: 1rem;
+                margin-bottom: 1rem;
+                margin-top: 0.6rem;
+            }
 
             @include mobile {
-                display: block;
-                padding: 0 1rem;
+                padding-left: 0rem;
+                margin-bottom: 0rem;
+            }
+        }
+
+        .navbar-toggler {
+            @include tablet {
+                padding-right: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            @include mobile {
+                margin-bottom: 0rem;
+                padding-right: 0rem;
+            }
+        }
+
+        .navbar-collapse {
+            @include tablet {
+                min-height: 100vh;
+                height: auto;
+                border-top: 1px solid #FECE05;
+                padding-top: 1rem;
+            }
+
+            .navbar-nav>.active>a {
+                color: red;
             }
 
             .navbar-nav {
-                margin-right: 120px;
 
                 .nav-item {
+
                     .nav-link {
-                        color: #434241;
-                        font-size: 20px;
+                        color: #000000;
                         font-weight: 500;
-                        font-family: $bitter;
-                        line-height: 21.6px;
+                        font-size: 16px;
+                        line-height: 16px;
+                        transition: .5s ease;
                         text-transform: uppercase;
+                        font-family: $bitter;
+
+                        @include tablet {
+                            text-align: center;
+                            font-size: 18px;
+                            padding: 16px 0px;
+                        }
 
                         &:hover {
                             color: #FECE05;
-
-                        }
-                    }
-                }
-
-                .dropdown-menu {
-                    background-color: transparent;
-                    border: none;
-
-                    &.show {
-                        transform: translate3d(245px, -40px, 0px) !important;
-
-                        @include mobile {
-                            position: relative !important;
-                            transform: none !important;
-                        }
-                    }
-
-                    .dropdown-item {
-                        color: #434241;
-                        font-size: 20px;
-                        font-weight: 500;
-                        font-family: $bitter;
-                        line-height: 21.6px;
-                        text-transform: uppercase;
-
-                        &:hover {
-                            background-color: transparent;
-                            color: #FECE05;
                         }
 
-                        &:active {
-                            background-color: transparent;
+                        &.dropdown-toggle {
+                            &::after {
+                                content: '\f107';
+                                font-family: 'FontAwesome';
+                                font-size: 18px;
+                                color: #333;
+                                font-weight: 400;
+                                display: block;
+                                position: absolute;
+                                right: -6px;
+                                top: 8px;
+                                border: none;
+
+                                @include tablet {
+                                    right: -165px;
+                                    top: 16px;
+                                    left: 0;
+                                }
+
+                            }
+
+                            &:hover {
+                                &::after {
+                                    color: #FECE05;
+                                }
+                            }
+                        }
+
+                        &.blog-s {
+                            padding-left: 1rem;
+
+                            @include tablet {
+                                padding-left: 0rem;
+                            }
                         }
                     }
                 }
             }
         }
-    }
 
-    .first-bg {
-        position: absolute;
-        bottom: 0;
-    }
-
-    .second-bg {
-
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        img {
-            width: 100%;
-            height: 100%;
+        .navbar-brand {
+            .logo {
+                width: 150px;
+            }
         }
+
+        .consultation-btn {
+            &.main-header {
+                display: block;
+
+                @include tablet {
+                    display: none;
+                }
+            }
+
+            &.bottom-btn {
+                display: none;
+
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 10px;
+                }
+
+                .designing-btn-mobile {
+                    display: none;
+
+                    @include mobile {
+                        display: block;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+
     }
 }
+
+//navbar start
+// .fixed-top {
+//     z-index: 1111;
+
+//     .navbar {
+//         padding: 0.5rem 4rem;
+//         z-index: 1111;
+
+//         @include mobile {
+//             padding: 0.5rem 1rem;
+//         }
+
+//         &.main-nav {
+//             background-color: rgba(255, 255, 255, 0.50) !important;
+//             z-index: 1111;
+
+//             backdrop-filter: blur(54.5px);
+
+//             .navbar-toggler {
+//                 padding: 0.25rem 0rem;
+
+//                 @include mobile {
+//                     order: 2;
+//                 }
+//             }
+
+//             // .logo {
+//             //     margin-left: 100px;
+
+//             //     @include mobile {
+//             //         margin-left: 0px;
+//             //     }
+
+//             // }
+
+//             .consultation-btn {
+//                 @include mobile {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+
+
+
+//     .navbar-exp {
+//         padding: 30px 0px 70px 0px;
+//         background-color: rgba(255, 255, 255, 0.50) !important;
+//         backdrop-filter: blur(54.5px);
+//         height: 100vh;
+
+//         .inner-nav {
+//             display: flex;
+//             padding: 0 4rem;
+
+//             @include mobile {
+//                 display: block;
+//                 padding: 0 1rem;
+//             }
+
+//             .navbar-nav {
+//                 margin-right: 120px;
+
+//                 .nav-item {
+//                     .nav-link {
+//                         color: #434241;
+//                         font-size: 20px;
+//                         font-weight: 500;
+//                         font-family: $bitter;
+//                         line-height: 21.6px;
+//                         text-transform: uppercase;
+
+//                         &:hover {
+//                             color: #FECE05;
+
+//                         }
+//                     }
+//                 }
+
+//                 .dropdown-menu {
+//                     background-color: transparent;
+//                     border: none;
+
+//                     &.show {
+//                         transform: translate3d(245px, -40px, 0px) !important;
+
+//                         @include mobile {
+//                             position: relative !important;
+//                             transform: none !important;
+//                         }
+//                     }
+
+//                     .dropdown-item {
+//                         color: #434241;
+//                         font-size: 20px;
+//                         font-weight: 500;
+//                         font-family: $bitter;
+//                         line-height: 21.6px;
+//                         text-transform: uppercase;
+
+//                         &:hover {
+//                             background-color: transparent;
+//                             color: #FECE05;
+//                         }
+
+//                         &:active {
+//                             background-color: transparent;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .first-bg {
+//         position: absolute;
+//         bottom: 0;
+//     }
+
+//     .second-bg {
+
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+
+//         img {
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+// }
 
 //navbar end
 
@@ -743,6 +924,11 @@ a {
                     }
                 }
 
+            }
+        }
+        .logo-img{
+            .logo{
+                width: 150px;
             }
         }
 
@@ -2172,27 +2358,84 @@ a {
         }
     }
 }
+
 //blog sec end
 
 //HeliPad Insignia sec start
 
-//HeliPad Insignia sec end
-.helipad-insignia{
+.helipad-insignia {
     background-color: $secondary-bg;
 
-    .main-content{
+    .main-content {
         padding: 60px 0px;
 
-        @include tablet{
+        @include tablet {
             padding: 20px 0px;
         }
 
-        .first-col{
+        .first-col {
             display: flex;
             justify-content: center;
         }
     }
 }
+
+//HeliPad Insignia sec end
+
+//get in touch sec start 
+.get-in-touch {
+    background-color: $secondary-bg;
+
+    .main-content {
+        padding: 80px 0px;
+
+        @include mobile {
+            padding: 60px 0px;
+        }
+
+        .contact-from {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .form-fields-container {
+                background-color: #fff;
+                border-radius: 12px;
+                padding: 52px 40px 33px 40px;
+                width: 60%;
+                margin-top: 40px;
+
+                @include tablet {
+                    width: 70%;
+                }
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                .form-group {
+                    margin-bottom: 1.7rem !important;
+
+                    .form-control {
+                        border-radius: 8px;
+                        border: 1px solid #BCBBBA;
+                        background-color: transparent;
+                    }
+                }
+
+                .contact-btn {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+//get in touch sec start 
+
+
 //home page end
 
 //about page start
@@ -2281,7 +2524,7 @@ a {
                 position: absolute;
                 bottom: 20px;
                 right: 98px;
-                z-index: 1111;
+                z-index: 999;
 
                 @include tablet {
                     display: none;

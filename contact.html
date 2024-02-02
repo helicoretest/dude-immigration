@@ -25,44 +25,36 @@
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="shortcut icon" type="image/png" href="./assets/images/fav-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="./assets/images/fav-icon.png" />
 
   <title>Helipad Immigration Consulting Ltd</title>
 </head>
 
 <body>
   <!-- navbar start -->
-  <div class="fixed-top">
-    <nav class="navbar main-nav">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">
-          <div class="img-box">
-            <img src="./assets/images/menu.png" alt="menu" />
-          </div>
-        </span>
-      </button>
+  <header>
+    <nav class="navbar navbar-expand-lg main-nav">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <image class="img-fluid logo" src="./assets/images/final-logo.png" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+          <span class="navbar-toggler-icon">
+            <div class="img-box">
+              <img src="./assets/images/menu.png" alt="menu" />
+            </div>
+          </span>
+        </button>
 
-      <a href="./index.html" class="logo">
-        <div class="logo-img">
-          <img src="./assets/images/main-logo.png" alt="logo" class="img-fluid" />
-        </div>
-      </a>
-
-      <div class="consultation-btn">
-        <button class="primary-btn">Book A Consultation</button>
-      </div>
-    </nav>
-
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="navbar-exp">
-        <div class="inner-nav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">ABOUT<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="./about.html">ABOUT</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -78,37 +70,26 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="./blog.html">blog</a>
+              <a class="nav-link blog-s" href="./blog.html">blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact us</a>
             </li>
+            <li class="nav-item">
+              <div class="consultation-btn bottom-btn">
+                <button class="primary-btn">Book A Consultation</button>
+              </div>
+            </li>
+           
           </ul>
+        </div>
 
-          <!-- <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="./studentvisa.html"
-                  >Student Visa<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./businessvisa.html">Business Visa</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Visiting Visa</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#">Work Permit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Permanent Resident</a>
-              </li>
-            </ul> -->
+        <div class="consultation-btn main-header">
+          <button class="primary-btn">Book A Consultation</button>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
+  </header>
   <!-- navbar end -->
 
   <!-- contact sec start -->
@@ -139,6 +120,10 @@
                     autocomplete="off" />
                 </div>
                 <div class="form-group">
+                  <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Mobile Number"
+                    autocomplete="off" />
+                </div>
+                <div class="form-group">
                   <select id="book" class="form-control">
                     <option value="" selected disabled>
                       Select Your Topic
@@ -146,6 +131,13 @@
                     <option value="Topic 1">Topic 1</option>
                     <option value="Topic 2">Topic 2</option>
                   </select>
+                </div>
+                <div class="upload-file">
+                    <i class="fas fa-paperclip"></i>
+                  <div class="form-group">
+                    <label for="formFile" class="form-label upload-cv">Upload CV</label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
                 </div>
                 <div class="form-group">
                   <textarea type="text" id="message" class="form-control" placeholder="Message" autocomplete="off"
@@ -259,7 +251,7 @@
                   </div>
                 </div>
               </div>
-           
+
               <div class="card">
                 <div class="card-header" id="headingSeven">
                   <h2 class="mb-0">
@@ -310,14 +302,34 @@
 
                 <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
                   <div class="card-body para-txt">
-                    There are many ways <a href="https://arrivein.com/daily-life-in-canada/how-to-move-to-canada-and-get-permanent-residence-pr/" target="_blank"> one can immigrate to Canada</a>. A number
+                    There are many ways <a
+                      href="https://arrivein.com/daily-life-in-canada/how-to-move-to-canada-and-get-permanent-residence-pr/"
+                      target="_blank"> one can immigrate to Canada</a>. A number
                     of immigration programs are available that lead to
-                    permanent residency, including:<a href="https://arrivein.com/daily-life-in-canada/express-entry-moving-to-canada-as-a-permanent-resident-pr/"  target="_blank"> Express Entry (EE)</a>,
-                    <a href="https://arrivein.com/daily-life-in-canada/provincial-nominee-programs-pnp-moving-to-canada-as-a-permanent-resident-pr/" target="_blank"> Nominee, Programs (PNP)</a>, <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/atlantic-immigration.html" target="_blank"> Immigration
-                    Pilot (AIP)</a>,<a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa.html" target="_blank"> Start-up Visa (SUV)</a>,<a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-northern-immigration-pilot/pr-eligibility.html" target="_blank"> Rural and Northern
-                    Immigration Pilot (RNIP)</a>,<a href="https://arrivein.com/daily-life-in-canada/family-sponsorship-moving-to-canada-as-a-permanent-resident-pr/" target="_blank"> Family Sponsorship</a>,
-                    <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/quebec-skilled-workers.html" target="_blank"> Quebec-selected Skilled Workers</a>, <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/caregivers.html" target="_blank"> Caregivers</a>, <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/self-employed.html" target="_blank"> Self-employed </a>
-                    and <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/agri-food-pilot/about.html" target="_blank"> Agri-food Pilot</a>.
+                    permanent residency, including:<a
+                      href="https://arrivein.com/daily-life-in-canada/express-entry-moving-to-canada-as-a-permanent-resident-pr/"
+                      target="_blank"> Express Entry (EE)</a>,
+                    <a href="https://arrivein.com/daily-life-in-canada/provincial-nominee-programs-pnp-moving-to-canada-as-a-permanent-resident-pr/"
+                      target="_blank"> Nominee, Programs (PNP)</a>, <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/atlantic-immigration.html"
+                      target="_blank"> Immigration
+                      Pilot (AIP)</a>,<a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa.html"
+                      target="_blank"> Start-up Visa (SUV)</a>,<a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/rural-northern-immigration-pilot/pr-eligibility.html"
+                      target="_blank"> Rural and Northern
+                      Immigration Pilot (RNIP)</a>,<a
+                      href="https://arrivein.com/daily-life-in-canada/family-sponsorship-moving-to-canada-as-a-permanent-resident-pr/"
+                      target="_blank"> Family Sponsorship</a>,
+                    <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/quebec-skilled-workers.html"
+                      target="_blank"> Quebec-selected Skilled Workers</a>, <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/caregivers.html"
+                      target="_blank"> Caregivers</a>, <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/self-employed.html"
+                      target="_blank"> Self-employed </a>
+                    and <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/agri-food-pilot/about.html"
+                      target="_blank"> Agri-food Pilot</a>.
                   </div>
                 </div>
               </div>
@@ -342,8 +354,12 @@
                     dependent child of a dependent child<br />
                     However, your dependents are not permitted to arrive in
                     Canada before you. <br />
-                    You can also <a href="https://arrivein.com/daily-life-in-canada/family-sponsorship-moving-to-canada-as-a-permanent-resident-pr/" target="_blank"> sponsor eligible family members</a> through
-                    the <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship.html" target="_blank"> Family sponsorship program</a>. This allows family members
+                    You can also <a
+                      href="https://arrivein.com/daily-life-in-canada/family-sponsorship-moving-to-canada-as-a-permanent-resident-pr/"
+                      target="_blank"> sponsor eligible family members</a> through
+                    the <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship.html"
+                      target="_blank"> Family sponsorship program</a>. This allows family members
                     to live, work, and study in Canada. As a sponsor, you need
                     to prove you will:
 
@@ -353,8 +369,10 @@
                         your family member.
                       </li>
                       <li>
-                        Be able to support the family member financially <a href="https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1355&top=14" target="_blank"> for a
-                        period of time</a>.
+                        Be able to support the family member financially <a
+                          href="https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1355&top=14" target="_blank">
+                          for a
+                          period of time</a>.
                       </li>
                       <li>
                         Not be receiving social assistance for reasons other
@@ -378,14 +396,21 @@
 
                 <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
                   <div class="card-body para-txt">
-                    <a href="https://arrivein.com/daily-life-in-canada/express-entry-moving-to-canada-as-a-permanent-resident-pr/" target="_blank"> The Express Entry (EE) program</a> is one of the most sought
+                    <a href="https://arrivein.com/daily-life-in-canada/express-entry-moving-to-canada-as-a-permanent-resident-pr/"
+                      target="_blank"> The Express Entry (EE) program</a> is one of the most sought
                     after and popular ways to immigrate to Canada. Express
                     Entry is an online immigration application system that
                     allows prospective newcomers to be considered as a skilled
                     immigrant. A EE profile will determine your ranking and
-                    can be used to apply for <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html" target="_blank"> Federal Skilled Worker (FSW)
-                    program</a>,<a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/skilled-trades.html" target="_blank"> Federal Skilled Trades (FST) program</a> and <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html" target="_blank"> Canadian
-                    Experience Class</a>.
+                    can be used to apply for <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html"
+                      target="_blank"> Federal Skilled Worker (FSW)
+                      program</a>,<a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/skilled-trades.html"
+                      target="_blank"> Federal Skilled Trades (FST) program</a> and <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html"
+                      target="_blank"> Canadian
+                      Experience Class</a>.
                   </div>
                 </div>
               </div>
@@ -405,26 +430,34 @@
                   data-parent="#accordionExample">
                   <div class="card-body para-txt">
                     In order to create an Express Entry profile, you’ll first
-                    need to create an <a href="https://canada.ca/en/immigration-refugees-citizenship/services/application/account.html" target="_blank"> Immigration, Refugees and Citizenship
-                    Canada (IRCC) account</a> then submit your profile to formally
+                    need to create an <a
+                      href="https://canada.ca/en/immigration-refugees-citizenship/services/application/account.html"
+                      target="_blank"> Immigration, Refugees and Citizenship
+                      Canada (IRCC) account</a> then submit your profile to formally
                     enter the Express Entry pool of candidates. To create your
                     profile, you’ll need:
 
                     <ul class="inner-list">
                       <li>
-                        <span class="inner-span"><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/find-national-occupation-code.html" target="_blank"> National Occupational Classification (NOC)
-                          number</a>:</span>
+                        <span class="inner-span"><a
+                            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/find-national-occupation-code.html"
+                            target="_blank"> National Occupational Classification (NOC)
+                            number</a>:</span>
                         This is the system the Canadian government uses to
                         classify various jobs and occupations.
                       </li>
                       <li>
-                        <span class="inner-span"><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html" target="_blank"> Education credential assessment (ECA)</a>:</span>
+                        <span class="inner-span"><a
+                            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessed.html"
+                            target="_blank"> Education credential assessment (ECA)</a>:</span>
                         This report verifies that your foreign degree,
                         diploma, certificate, or other credentials are valid
                         and equal to a Canadian one.  
                       </li>
                       <li>
-                        <span class="inner-span"><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html" target="_blank"> Approved language test</a>: </span>
+                        <span class="inner-span"><a
+                            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html"
+                            target="_blank"> Approved language test</a>: </span>
                         Test results can be for either English or French. This
                         test evaluates your language skills in speaking,
                         reading, listening, and writing.
@@ -448,7 +481,9 @@
                 <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
                   data-parent="#accordionExample">
                   <div class="card-body para-txt">
-                    The Government of Canada has an <a href="https://ircc.canada.ca/english/immigrate/skilled/crs-tool.asp" target="_blank"> online tool</a> that will help
+                    The Government of Canada has an <a
+                      href="https://ircc.canada.ca/english/immigrate/skilled/crs-tool.asp" target="_blank"> online
+                      tool</a> that will help
                     calculate your Comprehensive Ranking System (CRS) score.
                     CRS is the points-based system Canadian immigration uses
                     to assess and rank your profile in the Express Entry pool.
@@ -461,8 +496,10 @@
                       <li>Work experience</li>
                     </ul>
                     This score (up to 1,200 points) can be used to check if
-                    you rank above the minimum required points from the <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html" target="_blank"> most
-                    recent round of invitations</a>. 
+                    you rank above the minimum required points from the <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html"
+                      target="_blank"> most
+                      recent round of invitations</a>. 
                   </div>
                 </div>
               </div>
@@ -482,8 +519,10 @@
                     Express Entry manages applications for the Federal Skilled
                     Worker program, Federal Skilled Trades program, and
                     Canadian Experience Class. You can compare the various
-                    programs and your eligibility for EE on the <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/compare.html" target="_blank"> Government of
-                    Canada site</a>.
+                    programs and your eligibility for EE on the <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/compare.html"
+                      target="_blank"> Government of
+                      Canada site</a>.
                   </div>
                 </div>
               </div>
@@ -503,7 +542,9 @@
                   <div class="card-body para-txt">
                     Foreign nationals will need a work permit to be allowed to
                     work in Canada. However, sometimes you may be eligible to
-                    work in Canada without a <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/temporary/need-permit.html" target="_blank"> work permit</a>. 
+                    work in Canada without a <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/temporary/need-permit.html"
+                      target="_blank"> work permit</a>. 
                     <h6 class="second-header my-2">
                       There are two types of work permits:
                     </h6>
@@ -511,8 +552,10 @@
                       <li>
                         <span class="inner-span">Open work permit:</span> This
                         allows you to work for any employer in Canada and you
-                        can only get an open work permit in <a href="https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=177&top=17" target="_blank"> specific
-                        situations</a>.
+                        can only get an open work permit in <a
+                          href="https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=177&top=17" target="_blank">
+                          specific
+                          situations</a>.
                       </li>
                       <li>
                         <span class="inner-span">Employer-specific work permit:</span>
@@ -522,17 +565,27 @@
                       </li>
                     </ul>
                     The other way individuals from other countries can legally
-                    work in Canada is to apply for <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec.html" target="_blank"> International Experience
-                    Canada (IEC)</a> which is also known as a Working Holiday
+                    work in Canada is to apply for <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec.html"
+                      target="_blank"> International Experience
+                      Canada (IEC)</a> which is also known as a Working Holiday
                     Visa. Learn more about IEC, check eligibility, and get
-                    information on processing times and fees on the <a href="https://canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/about.html" target="_blank"> government
-                    website</a>. <br />
-                    International students in Canada may also be <a href="https://arrivein.com/career-ca/tips-for-finding-work-as-an-international-student-in-canada/" target="_blank"> eligible to
-                    work</a>. Some study permits list a condition that says you’re
+                    information on processing times and fees on the <a
+                      href="https://canada.ca/en/immigration-refugees-citizenship/services/work-canada/iec/about.html"
+                      target="_blank"> government
+                      website</a>. <br />
+                    International students in Canada may also be <a
+                      href="https://arrivein.com/career-ca/tips-for-finding-work-as-an-international-student-in-canada/"
+                      target="_blank"> eligible to
+                      work</a>. Some study permits list a condition that says you’re
                     allowed to work on- or off-campus while in school.
                     However, once you graduate, you’ll need to apply for a
-                    work permit in Canada or apply for a <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html" target="_blank"> Post-graduate Work
-                    Permit (PGWP)</a>, or apply for <a href="https://arrivein.com/studying/an-international-students-guide-to-permanent-residency-in-canada/" target="_blank"> permanent residence</a>. 
+                    work permit in Canada or apply for a <a
+                      href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html"
+                      target="_blank"> Post-graduate Work
+                      Permit (PGWP)</a>, or apply for <a
+                      href="https://arrivein.com/studying/an-international-students-guide-to-permanent-residency-in-canada/"
+                      target="_blank"> permanent residence</a>. 
                   </div>
                 </div>
               </div>
@@ -552,8 +605,10 @@
                   data-parent="#accordionExample">
                   <div class="card-body para-txt">
                     Searching for a job in a new country can feel daunting.
-                    Get job-ready by preparing a <a href="https://arrivein.com/career-ca/how-to-write-a-canadian-resume-and-cover-letter-format-tips-and-templates/" target="_blank"> Canadian-style resume and
-                    cover letter</a> ahead of time. Remember that most Canadian
+                    Get job-ready by preparing a <a
+                      href="https://arrivein.com/career-ca/how-to-write-a-canadian-resume-and-cover-letter-format-tips-and-templates/"
+                      target="_blank"> Canadian-style resume and
+                      cover letter</a> ahead of time. Remember that most Canadian
                     employers will want to know if you are legally allowed to
                     work in Canada. This often translates to being a permanent
                     resident (PR), having a work permit, being an
@@ -564,27 +619,38 @@
                       <li>
                         <span class="inner-span">Search job websites:</span>This is a good starting point for many job
                         opportunities. Popular sites include the Canadian
-                        government’s <a href="https://www.jobbank.gc.ca/home" target="_blank"> Job Bank</a>, <a href="https://www.linkedin.com/jobs/" target="_blank"> LinkedIn Jobs</a>, <a href="https://ca.indeed.com/" target="_blank"> Indeed</a>, <a href="https://ca.indeed.com/" target="_blank"> Monster</a>,
+                        government’s <a href="https://www.jobbank.gc.ca/home" target="_blank"> Job Bank</a>, <a
+                          href="https://www.linkedin.com/jobs/" target="_blank"> LinkedIn Jobs</a>, <a
+                          href="https://ca.indeed.com/" target="_blank"> Indeed</a>, <a href="https://ca.indeed.com/"
+                          target="_blank"> Monster</a>,
                         and <a href="https://www.workopolis.com/en/" target="_blank"> Workopolis</a>. 
                       </li>
                       <li>
                         <span class="inner-span">Network and volunteer:</span>
-                        As many as <a href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target="_blank"> 65-85 per cent of jobs aren’t posted
-                        online</a>. Networking or volunteering is one way to tap
-                        into Canada’s hidden job market. <a href="https://arrivein.com/career-ca/how-to-write-compelling-linkedin-connection-request-messages/" target="_blank"> LinkedIn</a> is an
+                        As many as <a
+                          href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/"
+                          target="_blank"> 65-85 per cent of jobs aren’t posted
+                          online</a>. Networking or volunteering is one way to tap
+                        into Canada’s hidden job market. <a
+                          href="https://arrivein.com/career-ca/how-to-write-compelling-linkedin-connection-request-messages/"
+                          target="_blank"> LinkedIn</a> is an
                         excellent tool to connect with other people in your
                         industry.  
                       </li>
                       <li>
-                        <span class="inner-span">Look for a mentor:</span> <a href="https://arrivein.com/career-ca/how-to-find-a-mentor-in-canada-tips-for-newcomers/" target="_blank"> A
-                        mentor</a> can provide advice and coaching on the local
+                        <span class="inner-span">Look for a mentor:</span> <a
+                          href="https://arrivein.com/career-ca/how-to-find-a-mentor-in-canada-tips-for-newcomers/"
+                          target="_blank"> A
+                          mentor</a> can provide advice and coaching on the local
                         job market, grow your professional network, and help
                         find career opportunities.   
                       </li>
                       <li>
                         <span class="inner-span">Immigrant-serving organizations:</span>
-                        Government funded organizations such as <a href="https://accesemployment.ca/" target="_blank"> ACCES
-                        Employment</a> and <a href="https://www.costi.org/" target="_blank"> COSTI</a> can help newcomers find
+                        Government funded organizations such as <a href="https://accesemployment.ca/" target="_blank">
+                          ACCES
+                          Employment</a> and <a href="https://www.costi.org/" target="_blank"> COSTI</a> can help
+                        newcomers find
                         employment. Many of these organizations also organize
                         job fairs.    
                       </li>
@@ -594,7 +660,9 @@
                         help you find a job in your field. Search for
                         recruiters on LinkedIn or through a web search. Some
                         of the top employment agencies in Canada
-                        include <a href="https://www.roberthalf.com/us/en" target="_blank"> Robert Half</a>, <a href="https://www.randstad.ca/" target="_blank"> Randstad Canada</a>, and <a href="https://www.hays.ca/" target="_blank"> Hays Canada</a>.
+                        include <a href="https://www.roberthalf.com/us/en" target="_blank"> Robert Half</a>, <a
+                          href="https://www.randstad.ca/" target="_blank"> Randstad Canada</a>, and <a
+                          href="https://www.hays.ca/" target="_blank"> Hays Canada</a>.
                       </li>
                     </ul>
                   </div>
@@ -620,7 +688,9 @@
                     each section. Once you have done this, you can practice
                     writing, reading, listening and speaking in English.
                     Depending on why you are moving to Canada, newcomers can
-                    also practice answering <a href="https://ielts.org/take-a-test/preparation-resources/sample-test-questions" target="_blank"> sample test questions</a> for both the
+                    also practice answering <a
+                      href="https://ielts.org/take-a-test/preparation-resources/sample-test-questions" target="_blank">
+                      sample test questions</a> for both the
                     IELTS Academic and IELTS General Training test. To most
                     closely simulate the actual test, practice under timed
                     conditions then review your answers compared to the model
@@ -643,20 +713,31 @@
                 <div id="collapseSeventheen" class="collapse" aria-labelledby="headingSeventheen"
                   data-parent="#accordionExample">
                   <div class="card-body para-txt">
-                    To <a href="https://arrivein.com/daily-life-in-canada/study-permit-moving-to-canada-as-an-international-student/" target="_blank"> study in Canada as an international student</a>, you need
+                    To <a
+                      href="https://arrivein.com/daily-life-in-canada/study-permit-moving-to-canada-as-an-international-student/"
+                      target="_blank"> study in Canada as an international student</a>, you need
                     to apply for a study permit:
                     <ul class="inner-list">
                       <li>
-                        Enroll at a <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html" target="_blank"> Designated Learning Institution (DLI)</a>.  
+                        Enroll at a <a
+                          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/designated-learning-institutions-list.html"
+                          target="_blank"> Designated Learning Institution (DLI)</a>.  
                       </li>
 
                       <li>
-                        Get your documents ready, including <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html#doc1" target="_blank"> proof of
-                        acceptance</a>, <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html#doc2" target="_blank"> proof of identity</a>, and <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html#doc3" target="_blank"> proof of financial
-                        support</a>. 
+                        Get your documents ready, including <a
+                          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html#doc1"
+                          target="_blank"> proof of
+                          acceptance</a>, <a
+                          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html#doc2"
+                          target="_blank"> proof of identity</a>, and <a
+                          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html#doc3"
+                          target="_blank"> proof of financial
+                          support</a>. 
                       </li>
                       <li>
-                        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/apply.html" target="_blank"> Apply for a student permit</a> online or via mail.     
+                        <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/apply.html"
+                          target="_blank"> Apply for a student permit</a> online or via mail.     
                       </li>
                       <li>
                         Prepare for arrival once your student permit has been
@@ -664,10 +745,16 @@
                         documents:
                         <ul style="margin-left: 20px">
                           <li>
-                            Passport and travel documents, including <a href="https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#letter_of_introduction" target="_blank"> a letter
-                            of introduction</a>.
+                            Passport and travel documents, including <a
+                              href="https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#letter_of_introduction"
+                              target="_blank"> a letter
+                              of introduction</a>.
                           </li>
-                          <li>Valid <a href="https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#electronic_travel_authorization" target="_blank"> eTA</a> or <a href="https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#temporary_resident_visa" target="_blank"> temporary resident visa</a>.</li>
+                          <li>Valid <a
+                              href="https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#electronic_travel_authorization"
+                              target="_blank"> eTA</a> or <a
+                              href="https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#temporary_resident_visa"
+                              target="_blank"> temporary resident visa</a>.</li>
                           <li>Valid letter of acceptance from a school.</li>
                           <li>
                             Proof of funds to support yourself in Canada.
@@ -734,10 +821,10 @@
               <div class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12">
                 <a href="./index.html">
                   <div class="logo-img">
-                    <img src="./assets/images/logo-white.png" alt="logo" class="img-fluid" />
+                    <img src="./assets/images/final-logo.png" alt="logo" class="img-fluid logo" />
                   </div>
                 </a>
-                <h6 class="f-link other">
+                <h6 class="f-link other ml-2">
                   19139 72 Avenue Surrey BC, V4N 6L1
                 </h6>
               </div>
