@@ -40,7 +40,7 @@
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        
+
           <span class="navbar-toggler-icon">
             <div class="img-box">
               <img src="./assets/images/menu.png" alt="menu" />
@@ -80,7 +80,7 @@
                 <button class="primary-btn">Book A Consultation</button>
               </div>
             </li>
-           
+
           </ul>
         </div>
 
@@ -693,9 +693,25 @@
                 <option value="" selected disabled>
                   Select Your Topic
                 </option>
-                <option value="Topic 1">Topic 1</option>
-                <option value="Topic 2">Topic 2</option>
+                <option value="Student Visa">Student Visa</option>
+                <option value="Business Visa">Business Visa</option>
+                <option value="Visiting Visa">Visiting Visa</option>
+                <option value="Work Permit">Work Permit</option>
+                <option value="Provincial Nominee Program (PNP)
+">Provincial Nominee Program (PNP)
+                </option>
+                <option value="Super Visa">Super Visa</option>
+                <option value="Permanent Resident">Permanent Resident</option>
+                <option value="LMIA Applications">LMIA Applications</option>
               </select>
+            </div>
+
+            <div class="upload-file">
+              <i class="fas fa-paperclip"></i>
+              <div class="form-group">
+                <label for="formFile" class="form-label upload-cv">Upload CV</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
             </div>
 
             <div class="form-group">
@@ -887,14 +903,14 @@
     });
   </script>
 
-<script>
-  $(document).ready(function () {
+  <script>
+    $(document).ready(function () {
       $("ul.navbar-nav > li").click(function (e) {
-       $("ul.navbar-nav > li").removeClass("active");
-       $(this).addClass("active");
-        });
+        $("ul.navbar-nav > li").removeClass("active");
+        $(this).addClass("active");
+      });
     });
-</script>
+  </script>
 
 
   <script>
