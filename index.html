@@ -1,98 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/style.css" />
+    <!-- Boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
 
-  <!-- Boostrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- font-awesome link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/images/fav-icon.png"
+    />
 
-  <link rel="shortcut icon" type="image/png" href="./assets/images/fav-icon.png" />
+    <title>Helipad Immigration Consultancy Ltd</title>
+  </head>
 
-  <title>Helipad Immigration Consultancy Ltd</title>
-</head>
-
-<body>
-  <!-- navbar start -->
-  <header>
-    <nav class="navbar navbar-expand-lg main-nav">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">
-          <image class="img-fluid logo" src="./assets/images/final-logo.png" alt="logo" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-          <span class="navbar-toggler-icon">
-            <div class="img-box">
-              <img src="./assets/images/menu.png" alt="menu" />
-            </div>
-          </span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">ABOUT</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Our Services
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="./studentvisa.html">Student Visa</a>
-                <a class="dropdown-item" href="./businessvisa.html">Business Visa</a>
-                <a class="dropdown-item" href="./visitorvisa.html">Visiting Visa</a>
-                <a class="dropdown-item" href="./workpermit.html">Work Permit</a>
-                <a class="dropdown-item" href="./permanentresident.html">Permanent Resident</a>
+  <body>
+    <!-- navbar start -->
+    <header>
+      <nav class="navbar navbar-expand-lg main-nav">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            <image
+              class="img-fluid logo"
+              src="./assets/images/final-logo.png"
+              alt="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <div class="img-box">
+                <img src="./assets/images/menu.png" alt="menu" />
               </div>
-            </li>
+            </span>
+          </button>
 
-            <li class="nav-item">
-              <a class="nav-link blog-s" href="./blog.html">blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact us</a>
-            </li>
-            <li class="nav-item">
-              <div class="consultation-btn bottom-btn">
-                <button class="primary-btn">Book A Consultation</button>
-              </div>
-            </li>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">ABOUT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./studentvisa.html"
+                    >Student Visa</a
+                  >
+                  <a class="dropdown-item" href="./businessvisa.html"
+                    >Business Visa</a
+                  >
+                  <a class="dropdown-item" href="./visitorvisa.html"
+                    >Visiting Visa</a
+                  >
+                  <a class="dropdown-item" href="./workpermit.html"
+                    >Work Permit</a
+                  >
+                  <a class="dropdown-item" href="./permanentresident.html"
+                    >Permanent Resident</a
+                  >
+                </div>
+              </li>
 
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link blog-s" href="./blog.html">blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <div class="consultation-btn bottom-btn">
+                  <button class="primary-btn">Book A Consultation</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="consultation-btn main-header">
+            <button class="primary-btn">Book A Consultation</button>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <div class="consultation-btn main-header">
-          <button class="primary-btn">Book A Consultation</button>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-
-  <!-- <div class="fixed-top">
+    <!-- <div class="fixed-top">
     <nav class="navbar main-nav">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
         aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -169,31 +214,33 @@
       </div>
     </div>
   </div>-->
-  <!-- navbar end -->
+    <!-- navbar end -->
 
-  <!-- home banner sec start -->
-  <div class="home-sec-banner sec-gap">
-    <div class="main-content">
-      <div class="bg-img-box">
-        <div class="content">
-          <div class="img-box">
-            <img src="./assets/images/home-first.png" class="img-fluid" alt="first-img" />
+    <!-- home banner sec start -->
+    <div class="home-sec-banner sec-gap">
+      <div class="main-content">
+        <div class="bg-img-box">
+          <div class="content">
+            <div class="img-box">
+              <img
+                src="./assets/images/home-first.png"
+                class="img-fluid"
+                alt="first-img"
+              />
+            </div>
+            <h1 class="primary-header">
+              Embrace new horizons. Discover boundless possibilities. Welcome to
+              a world of opportunities.
+            </h1>
+            <button class="primary-btn">Book A Consultation</button>
           </div>
-          <h1 class="primary-header">
-            Embrace new horizons. Discover
-            boundless possibilities. Welcome
-            to a world of opportunities.
-          </h1>
-          <button class="primary-btn">Book A Consultation</button>
         </div>
       </div>
     </div>
-  </div>
-  <!-- home banner sec end -->
+    <!-- home banner sec end -->
 
-
-  <!-- home sec start -->
-  <!-- <div class="home-sec">
+    <!-- home sec start -->
+    <!-- <div class="home-sec">
     <div class="container">
       <div class="main-content">
         <div class="first-sec">
@@ -235,231 +282,337 @@
       </div>
     </div>
   </div> -->
-  <!-- home sec end -->
+    <!-- home sec end -->
 
-  <!-- our service sec start -->
-  <div class="our-service">
-    <div class="container">
-      <div class="main-content">
-        <h1 class="primary-header">Our Services</h1>
-        <div class="row row-service">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
-            <div class="img-box">
-              <img src="./assets/images/student visa new 1.jpg " class="img-fluid" alt="service" />
+    <!-- our service sec start -->
+    <div class="our-service">
+      <div class="container">
+        <div class="main-content">
+          <h1 class="primary-header">Our Services</h1>
+          <div class="row row-service">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
+              <div class="img-box">
+                <img
+                  src="./assets/images/student visa new 1.jpg "
+                  class="img-fluid"
+                  alt="service"
+                />
+              </div>
+            </div>
+
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="para-header">Student Visa</h1>
+              <h6 class="p-txt">
+                A student visa is a crucial document that allows foreign
+                nationals to study in another country. It offers aspiring
+                students an incredible opportunity to pursue academic excellence
+                and gain invaluable cultural experiences in an international
+                setting. Obtaining a student visa entails meeting specific
+                requirements, such as being accepted by a recognized educational
+                institution, demonstrating financial stability to cover tuition
+                fees and living expenses, and possessing valid health insurance.
+              </h6>
+              <a href="./studentvisa.html"
+                ><button class="primary-btn">Learn More</button></a
+              >
             </div>
           </div>
 
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="para-header">Student Visa</h1>
-            <h6 class="p-txt">
-              A student visa is a crucial document that allows foreign
-              nationals to study in another country. It offers aspiring
-              students an incredible opportunity to pursue academic excellence
-              and gain invaluable cultural experiences in an international
-              setting. Obtaining a student visa entails meeting specific
-              requirements, such as being accepted by a recognized educational
-              institution, demonstrating financial stability to cover tuition
-              fees and living expenses, and possessing valid health insurance.
-            </h6>
-            <a href="./studentvisa.html"><button class="primary-btn">Learn More</button></a>
-          </div>
-        </div>
-
-        <div class="row row-service">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="para-header">Work Permit</h1>
-            <h6 class="p-txt">
-              A work permit is an essential document that enables foreign
-              nationals to legally work in another country. It serves as a
-              gateway to exciting employment opportunities and allows
-              individuals to contribute their skills and expertise to the host
-              nation's workforce. Acquiring a work permit involves fulfilling
-              specific criteria, including securing a job offer from a
-              registered employer, demonstrating the necessary qualifications
-              and experience, and meeting any language proficiency
-              requirements.
-            </h6>
-            <a href="./workpermit.html"> <button class="primary-btn">Learn More</button></a>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content second">
-            <div class="img-box">
-              <img src="./assets/images/WORK VISA 2.png" class="img-fluid" alt="service" />
+          <div class="row row-service">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="para-header">Work Permit</h1>
+              <h6 class="p-txt">
+                A work permit is an essential document that enables foreign
+                nationals to legally work in another country. It serves as a
+                gateway to exciting employment opportunities and allows
+                individuals to contribute their skills and expertise to the host
+                nation's workforce. Acquiring a work permit involves fulfilling
+                specific criteria, including securing a job offer from a
+                registered employer, demonstrating the necessary qualifications
+                and experience, and meeting any language proficiency
+                requirements.
+              </h6>
+              <a href="./workpermit.html">
+                <button class="primary-btn">Learn More</button></a
+              >
             </div>
-          </div>
-        </div>
-
-        <div class="row row-service">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
-            <div class="img-box">
-              <img src="./assets/images/VISITOR VISA.webp" class="img-fluid" alt="service" />
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="para-header">Visiting Visa</h1>
-            <h6 class="p-txt">
-              A visiting visa is an important document that allows foreign
-              nationals to visit another country for a temporary period. It
-              provides an excellent opportunity to explore new cultures, visit
-              loved ones, attend conferences, or engage in tourism activities.
-              Obtaining a visiting visa involves meeting specific
-              requirements, such as demonstrating sufficient financial means
-              to cover travel expenses, having a valid passport, and providing
-              a detailed itinerary of the visit.
-            </h6>
-            <a href="./visitorvisa.html"><button class="primary-btn">Learn More</button> </a>
-          </div>
-        </div>
-
-        <div class="row row-service">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="para-header">Permanent Resident</h1>
-            <h6 class="p-txt">
-              Permanent residency, also known as a permanent resident status
-              or a green card, is a highly sought-after immigration status
-              that grants individuals the right to live and work permanently
-              in a foreign country. It provides stability, security, and a
-              pathway towards citizenship. Acquiring permanent residency
-              typically involves meeting specific criteria, such as having a
-              qualifying relationship, being sponsored by a family member or
-              employer, or meeting certain skill or investment requirements.
-            </h6>
-            <a href="./permanentresident.html"><button class="primary-btn">Learn More</button></a>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content second">
-            <div class="img-box">
-              <img src="./assets/images/PR 1.jpg" class="img-fluid" alt="service" />
-            </div>
-          </div>
-        </div>
-
-        <div class="row row-service">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
-            <div class="img-box">
-              <img src="./assets/images/service5.png" class="img-fluid" alt="service" />
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="para-header">Business Visa</h1>
-            <h6 class="p-txt">
-              A business visa is a crucial pathway for individuals seeking to
-              explore new entrepreneurial opportunities or expand their
-              existing ventures in a foreign country. It grants eligible
-              applicants the authorization to engage in business-related
-              activities, such as attending meetings, conferences, negotiating
-              contracts, or establishing a new company. The business visa
-              process involves meeting specific requirements, which may vary
-              depending on the destination country's immigration laws and
-              regulations.
-            </h6>
-            <a href="./businessvisa.html"><button class="primary-btn">Learn More</button></a>
-          </div>
-        </div>
-
-        <div class="row row-service">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="para-header">Provincial Nominee Program (PNP)</h1>
-            <h6 class="p-txt">
-              The Provincial Nominee Program (PNP) is a Canadian immigration program that allows individual provinces
-              and territories of Canada to nominate candidates for immigration who possess the skills, education, and
-              work experience required to contribute to the local economy and community. The PNP is designed to address
-              specific labor market and economic needs of each province or territory, as they have varying economic
-              conditions and requirements.
-            </h6>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
-            <div class="img-box">
-              <img src="./assets/images/service6.png" class="img-fluid" alt="service" />
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content second"
+            >
+              <div class="img-box">
+                <img
+                  src="./assets/images/WORK VISA 2.png"
+                  class="img-fluid"
+                  alt="service"
+                />
+              </div>
             </div>
           </div>
 
-        </div>
-
-        <div class="row row-service">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
-            <div class="img-box">
-              <img src="./assets/images/SUPERVISA.jpg" class="img-fluid" alt="service" />
+          <div class="row row-service">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
+              <div class="img-box">
+                <img
+                  src="./assets/images/VISITOR VISA.webp"
+                  class="img-fluid"
+                  alt="service"
+                />
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="para-header">Visiting Visa</h1>
+              <h6 class="p-txt">
+                A visiting visa is an important document that allows foreign
+                nationals to visit another country for a temporary period. It
+                provides an excellent opportunity to explore new cultures, visit
+                loved ones, attend conferences, or engage in tourism activities.
+                Obtaining a visiting visa involves meeting specific
+                requirements, such as demonstrating sufficient financial means
+                to cover travel expenses, having a valid passport, and providing
+                a detailed itinerary of the visit.
+              </h6>
+              <a href="./visitorvisa.html"
+                ><button class="primary-btn">Learn More</button>
+              </a>
             </div>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="para-header">Super Visa</h1>
-            <h6 class="p-txt">
-              A super visa lets you visit your children or grandchildren for 5 years at a time. It’s a visa that
-              provides multiple entries for a period up to 10 years.
-              There are specific requirements for a super visa, including the need for health insurance.<a
-                href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html"
-                target="_blank" class="inner-link">You must meet
-                all the criteria to be eligible.</a> <br />
-              Extensions up to 2 years are possible, if approved.
-            </h6>
-            <a href="./visitorvisa.html"><button class="primary-btn">Learn More</button></a>
-          </div>
-        </div>
 
-        <div class="row row-service">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="para-header">LMIA APPLICATIONS</h1>
-            <h6 class="p-txt">
-              A Labour Market Impact Assessment (LMIA) is a document that an employer in Canada must usually get before
-              hiring a foreign worker.<br />
-              A positive LMIA will show that there is a need for a foreign worker to fill the job and that no Canadian
-              worker can do the job. A positive LMIA is sometimes called a Confirmation letter.<br />
-              If you need an LMIA, your employer must send an application to Employment and Social Development
-              Canada(ESDC).<br />
-              If you are an employer, we can help you in your LMIA application, posting job ads and complete process to
-              hire a Foreign Worker.<br />
-              If you are an individual struggling to find an employer who can sponsor you for PR, we can assist you in
-              getting job letter, sponsorship and also help you with complete PR process. </h6>
+          <div class="row row-service">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="para-header">Permanent Resident</h1>
+              <h6 class="p-txt">
+                Permanent residency, also known as a permanent resident status
+                or a green card, is a highly sought-after immigration status
+                that grants individuals the right to live and work permanently
+                in a foreign country. It provides stability, security, and a
+                pathway towards citizenship. Acquiring permanent residency
+                typically involves meeting specific criteria, such as having a
+                qualifying relationship, being sponsored by a family member or
+                employer, or meeting certain skill or investment requirements.
+              </h6>
+              <a href="./permanentresident.html"
+                ><button class="primary-btn">Learn More</button></a
+              >
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content second"
+            >
+              <div class="img-box">
+                <img
+                  src="./assets/images/PR 1.jpg"
+                  class="img-fluid"
+                  alt="service"
+                />
+              </div>
+            </div>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
-            <div class="img-box">
-              <img src="./assets/images/service8.png" class="img-fluid" alt="service" />
+
+          <div class="row row-service">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
+              <div class="img-box">
+                <img
+                  src="./assets/images/service5.png"
+                  class="img-fluid"
+                  alt="service"
+                />
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="para-header">Business Visa</h1>
+              <h6 class="p-txt">
+                A business visa is a crucial pathway for individuals seeking to
+                explore new entrepreneurial opportunities or expand their
+                existing ventures in a foreign country. It grants eligible
+                applicants the authorization to engage in business-related
+                activities, such as attending meetings, conferences, negotiating
+                contracts, or establishing a new company. The business visa
+                process involves meeting specific requirements, which may vary
+                depending on the destination country's immigration laws and
+                regulations.
+              </h6>
+              <a href="./businessvisa.html"
+                ><button class="primary-btn">Learn More</button></a
+              >
+            </div>
+          </div>
+
+          <div class="row row-service">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="para-header">Provincial Nominee Program (PNP)</h1>
+              <h6 class="p-txt">
+                The Provincial Nominee Program (PNP) is a Canadian immigration
+                program that allows individual provinces and territories of
+                Canada to nominate candidates for immigration who possess the
+                skills, education, and work experience required to contribute to
+                the local economy and community. The PNP is designed to address
+                specific labor market and economic needs of each province or
+                territory, as they have varying economic conditions and
+                requirements.
+              </h6>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
+              <div class="img-box">
+                <img
+                  src="./assets/images/service6.png"
+                  class="img-fluid"
+                  alt="service"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-service">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
+              <div class="img-box">
+                <img
+                  src="./assets/images/SUPERVISA.jpg"
+                  class="img-fluid"
+                  alt="service"
+                />
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="para-header">Super Visa</h1>
+              <h6 class="p-txt">
+                A super visa lets you visit your children or grandchildren for
+                5 years at a time. It’s a visa that provides multiple entries
+                for a period up to 10 years. There are specific requirements for
+                a super visa, including the need for health insurance.<a
+                  href="https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/parent-grandparent-super-visa/eligibility.html"
+                  target="_blank"
+                  class="inner-link"
+                  >You must meet all the criteria to be eligible.</a
+                >
+                <br />
+                Extensions up to 2 years are possible, if approved.
+              </h6>
+              <a href="./visitorvisa.html"
+                ><button class="primary-btn">Learn More</button></a
+              >
+            </div>
+          </div>
+
+          <div class="row row-service">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="para-header">LMIA APPLICATIONS</h1>
+              <h6 class="p-txt">
+                A Labour Market Impact Assessment (LMIA) is a document that an
+                employer in Canada must usually get before hiring a foreign
+                worker.<br />
+                A positive LMIA will show that there is a need for a foreign
+                worker to fill the job and that no Canadian worker can do the
+                job. A positive LMIA is sometimes called a Confirmation
+                letter.<br />
+                If you need an LMIA, your employer must send an application
+                to Employment and Social Development Canada(ESDC).<br />
+                If you are an employer, we can help you in your LMIA
+                application, posting job ads and complete process to hire a
+                Foreign Worker.<br />
+                If you are an individual struggling to find an employer who can
+                sponsor you for PR, we can assist you in getting job letter,
+                sponsorship and also help you with complete PR process.
+              </h6>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
+              <div class="img-box">
+                <img
+                  src="./assets/images/service8.png"
+                  class="img-fluid"
+                  alt="service"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- our service sec end -->
+    <!-- our service sec end -->
 
-  <!-- abotut-us sec start -->
-  <div class="about">
-    <div class="container">
-      <div class="main-content">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
-            <h1 class="primary-header">About Helipad</h1>
-            <h6 class="p-txt">
-              Helipad Immigration Consultancy Ltd, based in Surrey, is a Registered Canadian Immigration Consultancy
-              (RCIC) firm, duly licensed by College of Immigration and Citizenship Consultants (CICC). We, at Helipad
-              Immigration, truly believe in the fact that “Client is the soul of our business”. Our dedicated team of
-              experts, strives hard to provide best results by giving full and undivided attention to each and every
-              case from scratch to finish. We are one of the most preferred immigration consultants as we offer best
-              quality services with no false commitments
-            </h6>
-            <a href="./about.html"><button class="primary-btn">Who We Are</button></a>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content">
-            <div class="row images-row">
-              <div class="col-xl-5 col-lg-5 col-md-5 col-6 col-sm-6 first-col">
-                <div class="img-box">
-                  <img src="./assets/images/about1.png" class="img-fluid" alt="about1" />
+    <!-- abotut-us sec start -->
+    <div class="about">
+      <div class="container">
+        <div class="main-content">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 content">
+              <h1 class="primary-header">About Helipad</h1>
+              <h6 class="p-txt">
+                Helipad Immigration Consultancy Ltd, based in Surrey, is a
+                Registered Canadian Immigration Consultancy (RCIC) firm, duly
+                licensed by College of Immigration and Citizenship Consultants
+                (CICC). We, at Helipad Immigration, truly believe in the fact
+                that “Client is the soul of our business”. Our dedicated team of
+                experts, strives hard to provide best results by giving full and
+                undivided attention to each and every case from scratch to
+                finish. We are one of the most preferred immigration consultants
+                as we offer best quality services with no false commitments
+              </h6>
+              <a href="./about.html"
+                ><button class="primary-btn">Who We Are</button></a
+              >
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <div class="row images-row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-6 col-sm-6 first-col"
+                >
+                  <div class="img-box">
+                    <img
+                      src="./assets/images/about1.png"
+                      class="img-fluid"
+                      alt="about1"
+                    />
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-6 col-sm-6 sec-col">
+                  <div class="img-box">
+                    <img
+                      src="./assets/images/about2.png"
+                      class="img-fluid"
+                      alt="about2"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-6 col-sm-6 sec-col">
-                <div class="img-box">
-                  <img src="./assets/images/about2.png" class="img-fluid" alt="about2" />
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-6 col-sm-6 third-col"
+                >
+                  <div class="img-box">
+                    <img
+                      src="./assets/images/about4.png"
+                      class="img-fluid"
+                      alt="about2"
+                    />
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl-5 col-lg-5 col-md-5 col-6 col-sm-6 third-col">
-                <div class="img-box">
-                  <img src="./assets/images/about4.png" class="img-fluid" alt="about2" />
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-6 col-sm-6 fourth-col">
-                <div class="img-box">
-                  <img src="./assets/images/about3.png" class="img-fluid" alt="about2" />
+                <div
+                  class="col-xl-6 col-lg-6 col-md-6 col-6 col-sm-6 fourth-col"
+                >
+                  <div class="img-box">
+                    <img
+                      src="./assets/images/about3.png"
+                      class="img-fluid"
+                      alt="about2"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -467,146 +620,321 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- abotut-us sec end -->
+    <!-- abotut-us sec end -->
 
-  <!-- HeliPad Insignia sec start -->
-  <div class="helipad-insignia">
-    <div class="container">
-      <div class="main-content">
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-12 col-sm-12 first-col">
+    <!-- HeliPad Insignia sec start -->
+    <div class="helipad-insignia">
+      <div class="container">
+        <div class="main-content">
+          <div class="row">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-12 col-sm-12 first-col"
+            >
+              <div class="img-box">
+                <img
+                  src="./assets/images/HELIPAD_INSIGNIA.png"
+                  class="img-fluid"
+                  alt="helipad-insignia"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HeliPad Insignia sec end -->
+
+    <!-- choose-us sec start -->
+    <div class="choose-us">
+      <div class="container">
+        <div class="main-content">
+          <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-6 col-12 col-sm-12 content">
+              <div class="img-box">
+                <img
+                  src="./assets/images/WHY CHOOSE US.jpeg"
+                  class="img-fluid"
+                  alt="choose-us"
+                />
+              </div>
+            </div>
+            <div
+              class="col-xl-7 col-lg-7 col-md-6 col-12 col-sm-12 sec-content"
+            >
+              <h1 class="primary-header">Why should Choose Us</h1>
+              <div class="inner-content">
+                <div class="list">
+                  <h6 class="p-txt">
+                    <i class="fas fa-check check-icon"></i>Expertise you can
+                    trust, backed by years of experience in our field.
+                  </h6>
+                </div>
+                <div class="list">
+                  <h6 class="p-txt">
+                    <i class="fas fa-check check-icon"></i>Personalized approach
+                    tailored to your unique immigration goals need.
+                  </h6>
+                </div>
+                <div class="list">
+                  <h6 class="p-txt">
+                    <i class="fas fa-check check-icon"></i>Comprehensive
+                    services covering all aspects of the immigration process.
+                  </h6>
+                </div>
+                <div class="list">
+                  <h6 class="p-txt">
+                    <i class="fas fa-check check-icon"></i>Trusted reputation
+                    and affiliations with reputable immigration authorities.
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-img-box">
+        <img
+          src="./assets/images/about-bg.png"
+          class="img-fluid"
+          alt="about-bg"
+        />
+      </div>
+    </div>
+
+    <!-- choose-us sec start -->
+
+    <!-- CTA sec start -->
+    <div class="cta">
+      <div class="container">
+        <div class="main-content">
+          <div class="bg-img img-fluid">
+            <div class="content">
+              <h1 class="p-header">
+                Explore your options with our Immigration Services
+              </h1>
+              <button class="primary-btn">Book A Consultation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA sec end -->
+
+    <!-- basic info sec start -->
+    <div class="basic-info">
+      <div class="container">
+        <div class="main-content">
+          <div class="main-item">
             <div class="img-box">
-              <img src="./assets/images/HELIPAD_INSIGNIA.png" class="img-fluid" alt="helipad-insignia" />
+              <img src="./assets/images/man.png" class="img-fluid" alt="man" />
             </div>
+            <h6 class="p-header num">252 +</h6>
+            <h6 class="p-header">TRUSTED CLIENTS</h6>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- HeliPad Insignia sec end -->
-
-  <!-- choose-us sec start -->
-  <div class="choose-us">
-    <div class="container">
-      <div class="main-content">
-        <div class="row">
-          <div class="col-xl-5 col-lg-5 col-md-6 col-12 col-sm-12 content">
+          <div class="main-item">
             <div class="img-box">
-              <img src="./assets/images/WHY CHOOSE US.jpeg" class="img-fluid" alt="choose-us" />
+              <img
+                src="./assets/images/airplane.png"
+                class="img-fluid"
+                alt="cases"
+              />
+            </div>
+            <h6 class="p-header num">385 +</h6>
+            <h6 class="p-header">SUCCESSFUL CASES</h6>
+          </div>
+          <div class="main-item">
+            <div class="img-box">
+              <img
+                src="./assets/images/university.png"
+                class="img-fluid"
+                alt="university"
+              />
+            </div>
+            <h6 class="p-header num">50 +</h6>
+            <h6 class="p-header">UNIVERSITIES</h6>
+          </div>
+          <div class="main-item">
+            <div class="img-box">
+              <img
+                src="./assets/images/graduating-student.png"
+                class="img-fluid"
+                alt="student"
+              />
+            </div>
+            <h6 class="p-header num">350 +</h6>
+            <h6 class="p-header">STUDENTS</h6>
+          </div>
+          <div class="main-item">
+            <div class="img-box">
+              <img
+                src="./assets/images/passport.png"
+                class="img-fluid"
+                alt="passport"
+              />
+            </div>
+            <h6 class="p-header num">796 +</h6>
+            <h6 class="p-header">IMMIGRATION</h6>
+          </div>
+        </div>
+
+        <div class="main-content mobile-view">
+          <div class="owl-carousel owl-theme info-caro">
+            <div class="main-item">
+              <div class="img-box">
+                <img
+                  src="./assets/images/man.png"
+                  class="img-fluid"
+                  alt="man"
+                />
+              </div>
+              <h6 class="p-header num">252 +</h6>
+              <h6 class="p-header">TRUSTED CLIENTS</h6>
+            </div>
+            <div class="main-item">
+              <div class="img-box">
+                <img
+                  src="./assets/images/airplane.png"
+                  class="img-fluid"
+                  alt="cases"
+                />
+              </div>
+              <h6 class="p-header num">385 +</h6>
+              <h6 class="p-header">SUCCESSFUL CASES</h6>
+            </div>
+            <div class="main-item">
+              <div class="img-box">
+                <img
+                  src="./assets/images/university.png"
+                  class="img-fluid"
+                  alt="university"
+                />
+              </div>
+              <h6 class="p-header num">50 +</h6>
+              <h6 class="p-header">UNIVERSITIES</h6>
+            </div>
+            <div class="main-item">
+              <div class="img-box">
+                <img
+                  src="./assets/images/graduating-student.png"
+                  class="img-fluid"
+                  alt="student"
+                />
+              </div>
+              <h6 class="p-header num">350 +</h6>
+              <h6 class="p-header">STUDENTS</h6>
+            </div>
+            <div class="main-item">
+              <div class="img-box">
+                <img
+                  src="./assets/images/passport.png"
+                  class="img-fluid"
+                  alt="passport"
+                />
+              </div>
+              <h6 class="p-header num">796 +</h6>
+              <h6 class="p-header">IMMIGRATION</h6>
             </div>
           </div>
-          <div class="col-xl-7 col-lg-7 col-md-6 col-12 col-sm-12 sec-content">
-            <h1 class="primary-header">Why should Choose Us</h1>
-            <div class="inner-content">
-              <div class="list">
-                <h6 class="p-txt">
-                  <i class="fas fa-check check-icon"></i>Expertise you can
-                  trust, backed by years of experience in our field.
-                </h6>
-              </div>
-              <div class="list">
-                <h6 class="p-txt">
-                  <i class="fas fa-check check-icon"></i>Personalized approach
-                  tailored to your unique immigration goals need.
-                </h6>
-              </div>
-              <div class="list">
-                <h6 class="p-txt">
-                  <i class="fas fa-check check-icon"></i>Comprehensive
-                  services covering all aspects of the immigration process.
-                </h6>
-              </div>
-              <div class="list">
-                <h6 class="p-txt">
-                  <i class="fas fa-check check-icon"></i>Trusted reputation
-                  and affiliations with reputable immigration authorities.
-                </h6>
-              </div>
+        </div>
+      </div>
+    </div>
+    <!-- basic info sec end -->
+
+    <!-- success sec start -->
+    <div class="our-success">
+      <div class="container-fluid">
+        <div class="main-content">
+          <h1 class="primary-header">Our Success Story</h1>
+          <div class="owl-carousel owl-theme success-caro">
+            <div class="success-card">
+              <img
+                src="./assets/images/quates.png"
+                class="img-fluid quates"
+                alt="quates"
+              />
+              <h6 class="p-txt">
+                I had an exceptional experience with Helipad Immigration
+                Consultancy Ltd. From the very beginning, their team provided me
+                with comprehensive guidance and support throughout the entire
+                immigration process. Their knowledge and expertise in
+                immigration law were evident, and they ensured that all my
+                documents were accurate and submitted on time. I successfully
+                obtained my visa and now enjoy a new chapter in my life.
+              </h6>
+              <h6 class="name">- Akash P</h6>
+            </div>
+            <div class="success-card">
+              <img
+                src="./assets/images/quates.png"
+                class="img-fluid quates"
+                alt="quates"
+              />
+              <h6 class="p-txt">
+                "The Helipad Immigration Consultancy Ltd provided invaluable
+                guidance and assistance in navigating the complex immigration
+                system. Their attention to detail, prompt communication, and
+                dedication to my case ensured a smooth and successful outcome. I
+                highly recommend their services to anyone seeking a reliable
+                immigration partner."
+              </h6>
+              <h6 class="name">- Pawandeep</h6>
+            </div>
+            <div class="success-card">
+              <img
+                src="./assets/images/quates.png"
+                class="img-fluid quates"
+                alt="quates"
+              />
+              <h6 class="p-txt">
+                "Choosing the Helipad Immigration Consultancy Ltd was the best
+                decision I made for my immigration journey. Their knowledgeable
+                team went above and beyond to understand my unique situation and
+                provided tailored solutions. Their commitment, integrity, and
+                genuine care for their clients truly set them apart."
+              </h6>
+              <h6 class="name">- Dhrumil</h6>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-img-box">
-      <img src="./assets/images/about-bg.png" class="img-fluid" alt="about-bg" />
-    </div>
-  </div>
+    <!-- success sec end -->
 
-  <!-- choose-us sec start -->
+    <!-- blog sec start -->
+    <div class="blog">
+      <div class="container">
+        <div class="main-content">
+          <h1 class="primary-header">Blogs</h1>
+          <div class="row blog-row">
+            <div class="col-lg-4 col-xl-4 col-md-4 col-12 col-sm-4 content">
+              <div class="img-box">
+                <div class="blog-img">
+                  <h6 class="p-txt">
+                    "Understanding the Different Types of Visas: A Comprehensive
+                    Guide”
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-12 col-sm-4 content">
+              <div class="img-box">
+                <div class="blog-img blog-img-2">
+                  <h6 class="p-txt">
+                    "The Importance of Hiring an Immigration Lawyer"
+                  </h6>
+                </div>
+              </div>
+            </div>
 
-  <!-- CTA sec start -->
-  <div class="cta">
-    <div class="container">
-      <div class="main-content">
-        <div class="bg-img img-fluid">
-          <div class="content">
-            <h1 class="p-header">
-              Explore your options with our Immigration Services
-            </h1>
-            <button class="primary-btn">Book A Consultation</button>
+            <div class="col-lg-4 col-xl-4 col-md-4 col-12 col-sm-4 content">
+              <div class="img-box">
+                <div class="blog-img blog-img-3">
+                  <h6 class="p-txt">"Common Immigration Mistakes to Avoid"</h6>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- CTA sec end -->
-
-  <!-- success sec start -->
-  <div class="our-success">
-    <div class="container-fluid">
-      <div class="main-content">
-        <h1 class="primary-header">Our Success Story</h1>
-        <div class="owl-carousel owl-theme success-caro">
-          <div class="success-card">
-            <img src="./assets/images/quates.png" class="img-fluid quates" alt="quates" />
-            <h6 class="p-txt">
-              I had an exceptional experience with Helipad Immigration Consultancy Ltd.
-              From the very beginning, their team provided me with
-              comprehensive guidance and support throughout the entire
-              immigration process. Their knowledge and expertise in
-              immigration law were evident, and they ensured that all my
-              documents were accurate and submitted on time. I successfully
-              obtained my visa and now enjoy a new chapter in my life.
-            </h6>
-            <h6 class="name">- Akash P</h6>
-          </div>
-          <div class="success-card">
-            <img src="./assets/images/quates.png" class="img-fluid quates" alt="quates" />
-            <h6 class="p-txt">
-              "The Helipad Immigration Consultancy Ltd provided invaluable guidance and
-              assistance in navigating the complex immigration system. Their
-              attention to detail, prompt communication, and dedication to my
-              case ensured a smooth and successful outcome. I highly recommend
-              their services to anyone seeking a reliable immigration
-              partner."
-            </h6>
-            <h6 class="name">- Pawandeep</h6>
-          </div>
-          <div class="success-card">
-            <img src="./assets/images/quates.png" class="img-fluid quates" alt="quates" />
-            <h6 class="p-txt">
-              "Choosing the Helipad Immigration Consultancy Ltd was the best decision I made
-              for my immigration journey. Their knowledgeable team went above
-              and beyond to understand my unique situation and provided
-              tailored solutions. Their commitment, integrity, and genuine
-              care for their clients truly set them apart." 
-            </h6>
-            <h6 class="name">- Dhrumil</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- success sec end -->
-
-  <!-- blog sec start -->
-  <div class="blog">
-    <div class="container">
-      <div class="main-content">
-        <h1 class="primary-header">Blogs</h1>
-        <div class="row blog-row">
-          <div class="col-lg-4 col-xl-4 col-md-4 col-12 col-sm-4 content">
+          <div class="owl-carousel owl-theme blog-caro content">
             <div class="img-box">
               <div class="blog-img">
                 <h6 class="p-txt">
@@ -615,8 +943,6 @@
                 </h6>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-xl-4 col-md-4 col-12 col-sm-4 content">
             <div class="img-box">
               <div class="blog-img blog-img-2">
                 <h6 class="p-txt">
@@ -624,356 +950,438 @@
                 </h6>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-xl-4 col-md-4 col-12 col-sm-4 content">
             <div class="img-box">
               <div class="blog-img blog-img-3">
                 <h6 class="p-txt">"Common Immigration Mistakes to Avoid"</h6>
               </div>
             </div>
           </div>
+          <a href="./blog.html">
+            <div class="text-center">
+              <button class="primary-btn">View All</button>
+            </div>
+          </a>
         </div>
-        <div class="owl-carousel owl-theme blog-caro content">
-          <div class="img-box">
-            <div class="blog-img">
-              <h6 class="p-txt">
-                "Understanding the Different Types of Visas: A Comprehensive
-                Guide”
-              </h6>
-            </div>
-          </div>
-          <div class="img-box">
-            <div class="blog-img blog-img-2">
-              <h6 class="p-txt">
-                "The Importance of Hiring an Immigration Lawyer"
-              </h6>
-            </div>
-          </div>
-          <div class="img-box">
-            <div class="blog-img blog-img-3">
-              <h6 class="p-txt">"Common Immigration Mistakes to Avoid"</h6>
-            </div>
-          </div>
-        </div>
-        <a href="./blog.html">
-          <div class="text-center">
-            <button class="primary-btn">View All</button>
-          </div>
-        </a>
       </div>
     </div>
-  </div>
 
-  <!-- blog sec end -->
+    <!-- blog sec end -->
 
-  <!-- get in touch sec start  -->
-  <div class="get-in-touch">
-    <div class="container-fluid">
-      <div class="main-content">
-        <div class="contact-from">
-          <h1 class="primary-header text-center">Get In Touch</h1>
-          <div class="form-fields-container">
-            <div class="form-group">
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name"
-                autocomplete="off" />
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Email"
-                autocomplete="off" />
-            </div>
-            <div class="form-group">
-              <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Mobile Number"
-                autocomplete="off" />
-            </div>
-            <div class="form-group">
-              <select id="book" class="form-control">
-                <option value="" selected disabled>
-                  Select Your Topic
-                </option>
-                <option value="Student Visa">Student Visa</option>
-                <option value="Business Visa">Business Visa</option>
-                <option value="Visiting Visa">Visiting Visa</option>
-                <option value="Work Permit">Work Permit</option>
-                <option value="Provincial Nominee Program (PNP)
-">Provincial Nominee Program (PNP)
-                </option>
-                <option value="Super Visa">Super Visa</option>
-                <option value="Permanent Resident">Permanent Resident</option>
-                <option value="LMIA Applications">LMIA Applications</option>
-              </select>
-            </div>
-
-            <div class="upload-file">
-              <i class="fas fa-paperclip"></i>
+    <!-- get in touch sec start  -->
+    <div class="get-in-touch">
+      <div class="container-fluid">
+        <div class="main-content">
+          <div class="contact-from">
+            <h1 class="primary-header text-center">Get In Touch</h1>
+            <div class="form-fields-container">
               <div class="form-group">
-                <label for="formFile" class="form-label upload-cv">Upload CV</label>
-                <input class="form-control" type="file" id="formFile">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Name"
+                  autocomplete="off"
+                />
               </div>
-            </div>
-
-            <div class="form-group">
-              <textarea type="text" id="message" class="form-control" placeholder="Message" autocomplete="off"
-                rows="3"></textarea>
-            </div>
-
-            <div class="contact-btn">
-              <button class="send-btn" id="send-btn">
-                <span class="msg" id="msg"></span>
-                SEND
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- get in touch sec end  -->
-
-
-  <!-- footer start -->
-  <div class="footer">
-    <div class="container">
-      <div class="main-content">
-        <div class="row footer-images">
-          <div class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12">
-            <div class="first-img-box">
-              <h6 class="box-txt">Have a doubt we can help</h6>
-              <button class="book-btn">
-                <span class="hover-underline-animation">
-                  Book a Consultation
-                </span>
-                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
-                  id="arrow-horizontal">
-                  <path transform="translate(30)"
-                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
-                    id="Path_10"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12">
-            <div class="first-img-box second-img-box">
-              <h6 class="box-txt">Complete your dream of going abroad</h6>
-              <button class="book-btn">
-                <span class="hover-underline-animation">
-                  Talk To Our Team
-                </span>
-                <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
-                  id="arrow-horizontal">
-                  <path transform="translate(30)"
-                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
-                    id="Path_10"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-7 col-lg-7 col-md-7 col-12 col-sm-12 content">
-            <div class="row">
-              <div class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12">
-                <a href="./index.html">
-                  <div class="logo-img">
-                    <img src="./assets/images/final-logo.png" alt="logo" class="img-fluid logo" />
-                  </div>
-                </a>
-                <h6 class="f-link other ml-2">
-                  19139 72 Avenue Surrey BC, V4N 6L1
-                </h6>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Email"
+                  autocomplete="off"
+                />
               </div>
-              <div class="col-xl-3 col-lg-3 col-md-3 col-5 col-sm-5 inner-content">
-                <div class="menu-link">
-                  <h4 class="f-header">Information</h4>
-                  <a href="./about.html">
-                    <h4 class="f-link">About</h4>
-                  </a>
-                  <a href="./blog.html">
-                    <h4 class="f-link">Blog</h4>
-                  </a>
-                  <a href="./contact.html">
-                    <h4 class="f-link">Contact us</h4>
-                  </a>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Mobile Number"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="form-group">
+                <select id="book" class="form-control">
+                  <option value="" selected disabled>Select Your Topic</option>
+                  <option value="Student Visa">Student Visa</option>
+                  <option value="Business Visa">Business Visa</option>
+                  <option value="Visiting Visa">Visiting Visa</option>
+                  <option value="Work Permit">Work Permit</option>
+                  <option
+                    value="Provincial Nominee Program (PNP)
+"
+                  >
+                    Provincial Nominee Program (PNP)
+                  </option>
+                  <option value="Super Visa">Super Visa</option>
+                  <option value="Permanent Resident">Permanent Resident</option>
+                  <option value="LMIA Applications">LMIA Applications</option>
+                </select>
+              </div>
+
+              <div class="upload-file">
+                <i class="fas fa-paperclip"></i>
+                <div class="form-group">
+                  <label for="formFile" class="form-label upload-cv"
+                    >Upload CV</label
+                  >
+                  <input class="form-control" type="file" id="formFile" />
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-7 col-sm-7 inner-content mobile-sec">
-                <div class="menu-link">
-                  <h4 class="f-header">Helpful Links</h4>
-                  <a href="./visitorvisa.html">
-                    <h4 class="f-link">Visiting visa</h4>
-                  </a>
-                  <a href="./studentvisa.html">
-                    <h4 class="f-link">Student visa</h4>
-                  </a>
-                  <a href="./businessvisa.html">
-                    <h4 class="f-link">Business Visa</h4>
-                  </a>
-                  <a href="./workpermit.html">
-                    <h4 class="f-link">Work permit</h4>
-                  </a>
 
-                  <a href="./permanentresident.html">
-                    <h4 class="f-link">Permanent resident</h4>
-                  </a>
-                </div>
+              <div class="form-group">
+                <textarea
+                  type="text"
+                  id="message"
+                  class="form-control"
+                  placeholder="Message"
+                  autocomplete="off"
+                  rows="3"
+                ></textarea>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12 sec-content">
-            <div class="form-group">
-              <label class="p-txt">Get in touch</label>
-              <span class="fa fa-envelope form-control-icon"> </span>
-              <div class="subscrice">
-                <input type="text" class="form-control" />
-                <h6 class="p-txt">Subscribe</h6>
-              </div>
-            </div>
-            <div class="socials-links">
-              <div class="links">
-                <a href="https://www.instagram.com/dudeimmigration/?igsh=ZGN2YTJzdXpjZTgz" target="_blank"
-                  class="s-link">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com/@dudeimmigration?_t=8igne8b27HC&_r=1" target="_blank" class="s-link">
-                  <i class="fab fa-tiktok ml-4"></i>
-                </a>
-                <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG5JFc80QQIaAAAAY0XD-xAlL9JVz98WGJGfqDhKpjozPAF6HHLpVNarE7VpvM4wsjQWmVxZ5_ajmo2EcjYK9zQMogTsypSxxoKrQqB6qTsYal2GAGyUFwtXvB7V8mnCs2W4cE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdude-immigration-2aa9702a7%2F"
-                  target="_blank" class="s-link">
-                  <i class="fab fa-linkedin-in ml-4"></i>
-                </a>
-                <a href="https://twitter.com/DudeImmigration" target="_blank" class="s-link">
-                  <i class="fab fa-twitter ml-4"></i>
-                </a>
-              </div>
-              <div class="back-to-top">
-                <button class="back-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-                  Back To Top
+
+              <div class="contact-btn">
+                <button class="send-btn" id="send-btn">
+                  <span class="msg" id="msg"></span>
+                  SEND
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-12 col-sm-12 footer-strip">
-            <div class="left-strip">
-              <span class="f-link other">Copyright Helipad Immigration Consultancy Ltd, 2024</span>
+      </div>
+    </div>
+    <!-- get in touch sec end  -->
+
+    <!-- footer start -->
+    <div class="footer">
+      <div class="container">
+        <div class="main-content">
+          <div class="row footer-images">
+            <div class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12">
+              <div class="first-img-box">
+                <h6 class="box-txt">Have a doubt we can help</h6>
+                <button class="book-btn">
+                  <span class="hover-underline-animation">
+                    Book a Consultation
+                  </span>
+                  <svg
+                    viewBox="0 0 46 16"
+                    height="10"
+                    width="30"
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="arrow-horizontal"
+                  >
+                    <path
+                      transform="translate(30)"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      data-name="Path 10"
+                      id="Path_10"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div class="right-strip">
-              <span class="f-link other">Terms and conditions</span>
-              <span class="f-link other ml-3">Privacy policies</span>
-              <span class="f-link other ml-3">Cookies settings</span>
+            <div class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12">
+              <div class="first-img-box second-img-box">
+                <h6 class="box-txt">Complete your dream of going abroad</h6>
+                <button class="book-btn">
+                  <span class="hover-underline-animation">
+                    Talk To Our Team
+                  </span>
+                  <svg
+                    viewBox="0 0 46 16"
+                    height="10"
+                    width="30"
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="arrow-horizontal"
+                  >
+                    <path
+                      transform="translate(30)"
+                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                      data-name="Path 10"
+                      id="Path_10"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-7 col-lg-7 col-md-7 col-12 col-sm-12 content">
+              <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12">
+                  <a href="./index.html">
+                    <div class="logo-img">
+                      <img
+                        src="./assets/images/final-logo.png"
+                        alt="logo"
+                        class="img-fluid logo"
+                      />
+                    </div>
+                  </a>
+                  <h6 class="f-link other ml-2">
+                    19139 72 Avenue Surrey BC, V4N 6L1
+                  </h6>
+                </div>
+                <div
+                  class="col-xl-3 col-lg-3 col-md-3 col-5 col-sm-5 inner-content"
+                >
+                  <div class="menu-link">
+                    <h4 class="f-header">Information</h4>
+                    <a href="./about.html">
+                      <h4 class="f-link">About</h4>
+                    </a>
+                    <a href="./blog.html">
+                      <h4 class="f-link">Blog</h4>
+                    </a>
+                    <a href="./contact.html">
+                      <h4 class="f-link">Contact us</h4>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="col-xl-4 col-lg-4 col-md-4 col-7 col-sm-7 inner-content mobile-sec"
+                >
+                  <div class="menu-link">
+                    <h4 class="f-header">Helpful Links</h4>
+                    <a href="./visitorvisa.html">
+                      <h4 class="f-link">Visiting visa</h4>
+                    </a>
+                    <a href="./studentvisa.html">
+                      <h4 class="f-link">Student visa</h4>
+                    </a>
+                    <a href="./businessvisa.html">
+                      <h4 class="f-link">Business Visa</h4>
+                    </a>
+                    <a href="./workpermit.html">
+                      <h4 class="f-link">Work permit</h4>
+                    </a>
+
+                    <a href="./permanentresident.html">
+                      <h4 class="f-link">Permanent resident</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-5 col-lg-5 col-md-5 col-12 col-sm-12 sec-content"
+            >
+              <div class="form-group">
+                <label class="p-txt">Get in touch</label>
+                <span class="fa fa-envelope form-control-icon"> </span>
+                <div class="subscrice">
+                  <input type="text" class="form-control" />
+                  <h6 class="p-txt">Subscribe</h6>
+                </div>
+              </div>
+              <div class="socials-links">
+                <div class="links">
+                  <a
+                    href="https://www.instagram.com/dudeimmigration/?igsh=ZGN2YTJzdXpjZTgz"
+                    target="_blank"
+                    class="s-link"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@dudeimmigration?_t=8igne8b27HC&_r=1"
+                    target="_blank"
+                    class="s-link"
+                  >
+                    <i class="fab fa-tiktok ml-4"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG5JFc80QQIaAAAAY0XD-xAlL9JVz98WGJGfqDhKpjozPAF6HHLpVNarE7VpvM4wsjQWmVxZ5_ajmo2EcjYK9zQMogTsypSxxoKrQqB6qTsYal2GAGyUFwtXvB7V8mnCs2W4cE=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdude-immigration-2aa9702a7%2F"
+                    target="_blank"
+                    class="s-link"
+                  >
+                    <i class="fab fa-linkedin-in ml-4"></i>
+                  </a>
+                  <a
+                    href="https://twitter.com/DudeImmigration"
+                    target="_blank"
+                    class="s-link"
+                  >
+                    <i class="fab fa-twitter ml-4"></i>
+                  </a>
+                </div>
+                <div class="back-to-top">
+                  <button
+                    class="back-btn"
+                    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+                  >
+                    Back To Top
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-12 col-sm-12 footer-strip"
+            >
+              <div class="left-strip">
+                <span class="f-link other"
+                  >Copyright Helipad Immigration Consultancy Ltd, 2024</span
+                >
+              </div>
+              <div class="right-strip">
+                <span class="f-link other">Terms and conditions</span>
+                <span class="f-link other ml-3">Privacy policies</span>
+                <span class="f-link other ml-3">Cookies settings</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- footer end -->
+    <!-- footer end -->
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-    type="text/javascript"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      type="text/javascript"
+    ></script>
 
-  <script>
-    SmoothScroll({
-      animationTime: 800,
-      stepSize: 100,
-      accelerationDelta: 50,
-      accelerationMax: 3,
-      touchpadSupport: true,
-    });
-  </script>
-
-  <script>
-    $(document).ready(function () {
-      $("ul.navbar-nav > li").click(function (e) {
-        $("ul.navbar-nav > li").removeClass("active");
-        $(this).addClass("active");
+    <script>
+      SmoothScroll({
+        animationTime: 800,
+        stepSize: 100,
+        accelerationDelta: 50,
+        accelerationMax: 3,
+        touchpadSupport: true,
       });
-    });
-  </script>
+    </script>
 
+    <script>
+      $(document).ready(function () {
+        $("ul.navbar-nav > li").click(function (e) {
+          $("ul.navbar-nav > li").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
 
-  <script>
-    $(".success-caro").owlCarousel({
-      loop: true,
-      responsiveClass: true,
-      dots: false,
-      stagePadding: 100,
-      center: true,
-      margin: 10,
-      autoplaySpeed: 3000,
-      navText: [
-        '<img src="./assets/images/arrow-left.png" class="arrow-btn" />',
-        '<img src="./assets/images/arrow-right.png" class="arrow-btn" />',
-      ],
-      responsive: {
-        0: {
-          items: 1,
-          stagePadding: 0,
+    <script>
+      $(".success-caro").owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        dots: false,
+        stagePadding: 100,
+        center: true,
+        margin: 10,
+        autoplaySpeed: 3000,
+        navText: [
+          '<img src="./assets/images/arrow-left.png" class="arrow-btn" />',
+          '<img src="./assets/images/arrow-right.png" class="arrow-btn" />',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+            stagePadding: 0,
+          },
+          600: {
+            items: 2,
+            stagePadding: 0,
+            margin: 30,
+          },
+          1000: {
+            items: 2,
+          },
         },
-        600: {
-          items: 2,
-          stagePadding: 0,
-          margin: 30,
+      });
+    </script>
+
+    <script>
+      $(".info-caro").owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        dots: false,
+        nav: false,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        autoplaySpeed: 3000,
+        center: true,
+
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 3,
+          },
         },
-        1000: {
-          items: 2,
+      });
+    </script>
+
+    <script>
+      $(".blog-caro").owlCarousel({
+        loop: true,
+        responsiveClass: true,
+        dots: false,
+        stagePadding: 20,
+        center: true,
+        margin: 10,
+        autoplaySpeed: 3000,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
         },
-      },
-    });
-  </script>
+      });
+    </script>
 
-  <script>
-    $(".blog-caro").owlCarousel({
-      loop: true,
-      responsiveClass: true,
-      dots: false,
-      stagePadding: 20,
-      center: true,
-      margin: 10,
-      autoplaySpeed: 3000,
-      nav: false,
-      responsive: {
-        0: {
-          items: 1,
-        },
+    <script>
+      // Get references to the menu button and the menu itself
+      const menuButton = document.querySelector(".navbar-toggler");
+      const menu = document.querySelector(".collapse");
 
-      },
-    });
-  </script>
-
-  <script>
-    // Get references to the menu button and the menu itself
-    const menuButton = document.querySelector('.navbar-toggler');
-    const menu = document.querySelector('.collapse');
-
-    // Add a click event listener to the document
-    document.addEventListener('click', function (event) {
-      // Check if the clicked element is outside the menu and the menu button
-      if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
-        // Close the menu
-        menu.classList.remove('show'); // This removes the "show" class to hide the menu
-      }
-    });
-  </script>
-</body>
-
+      // Add a click event listener to the document
+      document.addEventListener("click", function (event) {
+        // Check if the clicked element is outside the menu and the menu button
+        if (
+          !menu.contains(event.target) &&
+          !menuButton.contains(event.target)
+        ) {
+          // Close the menu
+          menu.classList.remove("show"); // This removes the "show" class to hide the menu
+        }
+      });
+    </script>
+  </body>
 </html>

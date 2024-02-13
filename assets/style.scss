@@ -926,8 +926,9 @@ a {
 
             }
         }
-        .logo-img{
-            .logo{
+
+        .logo-img {
+            .logo {
                 width: 150px;
             }
         }
@@ -2149,6 +2150,61 @@ a {
 }
 
 //cta sec end
+
+//basic-info sec start
+.basic-info {
+    background-color: #F8F8F8;
+
+    .main-content {
+        padding: 80px 0px;
+        display: flex;
+        justify-content: space-between;
+        @include tablet{
+            display: none;
+        }
+
+        .main-item {
+           @include tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           }
+            .img-box {
+                width: 80px;
+                height: 80px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .p-header {
+                color: $primary-txt-color;
+                font-size: 18px;
+                line-height: 28px;
+
+                &.num {
+                    color: $secondary-txt-color;
+                    font-size: 32px;
+                    line-height: 34px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &.mobile-view{
+            display: none;
+
+            @include tablet{
+                display: block;
+            }
+        }
+    }
+}
+
+//basic-info sec end
 
 // our success sec start
 .our-success {
