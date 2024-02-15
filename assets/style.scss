@@ -28,12 +28,19 @@ $btn-bg : #FECE05;
 
 $breakpoints: (
     "xl" : 2200px,
+    "lg" : 1080px,
     "md": 912px,
     "sm": 526px,
 );
 
 @mixin large-device {
     @media (min-width: map-get($breakpoints, "xl")) {
+        @content;
+    }
+}
+
+@mixin large-tab {
+    @media (max-width: map-get($breakpoints, "lg")) {
         @content;
     }
 }
@@ -658,17 +665,17 @@ a {
             }
         }
 
-        .rcic-logo{
+        .rcic-logo {
             display: none;
 
-            @include mobile{
+            @include mobile {
                 display: block;
             }
 
-            .img-box{
+            .img-box {
                 width: 130px;
 
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                 }
@@ -1117,16 +1124,18 @@ a {
             height: 680px;
             background-position: center center;
 
+            @include large-tab {
+                background-position: right;
+            }
+
             @include tablet {
                 height: 500px;
-            background-position: right;
-
+                background-position: right;
             }
 
             @include mobile {
                 height: 580px;
-            background-position: center center;
-
+                background-position: center center;
             }
 
             .content {
@@ -2180,17 +2189,19 @@ a {
         padding: 80px 0px;
         display: flex;
         justify-content: space-between;
-        @include tablet{
+
+        @include tablet {
             display: none;
         }
 
         .main-item {
-           @include tablet{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-           }
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
             .img-box {
                 width: 60px;
                 height: 60px;
@@ -2215,10 +2226,10 @@ a {
             }
         }
 
-        &.mobile-view{
+        &.mobile-view {
             display: none;
 
-            @include tablet{
+            @include tablet {
                 display: block;
             }
         }

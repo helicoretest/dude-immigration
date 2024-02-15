@@ -766,6 +766,11 @@ a:hover {
   height: 680px;
   background-position: center center;
 }
+@media (max-width: 1080px) {
+  .home-sec-banner .main-content .bg-img-box {
+    background-position: right;
+  }
+}
 @media (max-width: 912px) {
   .home-sec-banner .main-content .bg-img-box {
     height: 500px;
