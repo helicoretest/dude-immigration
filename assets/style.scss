@@ -529,6 +529,7 @@ a {
             @include mobile {
                 padding-left: 0rem;
                 margin-bottom: 0rem;
+                margin-right: 0rem;
             }
         }
 
@@ -657,6 +658,22 @@ a {
             }
         }
 
+        .rcic-logo{
+            display: none;
+
+            @include mobile{
+                display: block;
+            }
+
+            .img-box{
+                width: 130px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
 
     }
 }
@@ -1093,7 +1110,7 @@ a {
 .home-sec-banner {
     .main-content {
         .bg-img-box {
-            background-image: url("./images/home-banner-image.jpg");
+            background-image: url("./images/home-banner-image-new.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             width: 100%;
@@ -1102,10 +1119,14 @@ a {
 
             @include tablet {
                 height: 500px;
+            background-position: right;
+
             }
 
             @include mobile {
                 height: 580px;
+            background-position: center center;
+
             }
 
             .content {
@@ -1136,7 +1157,7 @@ a {
                     color: #FEFEFE;
 
                     @include tablet {
-                        width: 85%;
+                        width: 70%;
                         font-size: 36px;
                         line-height: 48px;
                     }
@@ -2171,8 +2192,8 @@ a {
             justify-content: center;
            }
             .img-box {
-                width: 80px;
-                height: 80px;
+                width: 60px;
+                height: 60px;
 
                 img {
                     width: 100%;
